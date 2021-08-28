@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        PostService.shared.getPosts { (result) in
+        FeedService.shared.getPosts { (result) in
             print(result)
         }
     }

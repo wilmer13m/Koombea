@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct PostResponse: Codable {
+struct Feed: Codable {
     
-    var data: [Data]?
+    var data: [User]?
     
-    struct Data: Codable {
+    struct User: Codable {
         
         var uid: String?
         var name: String?

@@ -7,15 +7,15 @@
 
 import UIKit
 
-class PostService {
+class FeedService {
 
-    static let shared = PostService()
+    static let shared = FeedService()
     private let endPoints = EndPoints()
     
-    func getPosts(completed: @escaping (Result<PostResponse, ServiceErrors>) -> Void) {
+    func getPosts(completed: @escaping (Result<Feed, ServiceErrors>) -> Void) {
         
         let urlString = endPoints.getPostURL()
-        print(urlString)
+
         guard let url = URL(string: urlString) else {return}
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -38,7 +38,7 @@ class PostService {
             do {
                 let deconder = JSONDecoder()
                 deconder.keyDecodingStrategy = .convertFromSnakeCase
-                let results = try deconder.decode(PostResponse.self, from: data)
+                let results = try deconder.decode(Feed.self, from: data)
                 completed(.success(results))
                 
             } catch {
