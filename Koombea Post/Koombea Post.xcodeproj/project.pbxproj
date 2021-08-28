@@ -16,6 +16,10 @@
 		A51C7CD526DAAF9D002C4218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51C7CD326DAAF9D002C4218 /* LaunchScreen.storyboard */; };
 		A51C7CE026DAAF9D002C4218 /* Koombea_PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7CDF26DAAF9D002C4218 /* Koombea_PostTests.swift */; };
 		A51C7CEB26DAAF9D002C4218 /* Koombea_PostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7CEA26DAAF9D002C4218 /* Koombea_PostUITests.swift */; };
+		A51C7D0826DAB8A1002C4218 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7D0726DAB8A1002C4218 /* PostService.swift */; };
+		A51C7D1126DAB923002C4218 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7D1026DAB923002C4218 /* Post.swift */; };
+		A51C7D1A26DABACB002C4218 /* ServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7D1926DABACB002C4218 /* ServiceErrors.swift */; };
+		A51C7D2526DABC6B002C4218 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7D2426DABC6B002C4218 /* EndPoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		A51C7CE626DAAF9D002C4218 /* Koombea PostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Koombea PostUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51C7CEA26DAAF9D002C4218 /* Koombea_PostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koombea_PostUITests.swift; sourceTree = "<group>"; };
 		A51C7CEC26DAAF9D002C4218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51C7D0726DAB8A1002C4218 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		A51C7D1026DAB923002C4218 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A51C7D1926DABACB002C4218 /* ServiceErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceErrors.swift; sourceTree = "<group>"; };
+		A51C7D2426DABC6B002C4218 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		A51C7D2D26DABE8C002C4218 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		A51C7D2E26DABED3002C4218 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,10 @@
 		A51C7CC426DAAF9B002C4218 /* Koombea Post */ = {
 			isa = PBXGroup;
 			children = (
+				A51C7D0F26DAB8C6002C4218 /* Models */,
+				A51C7D0626DAB87F002C4218 /* Services */,
+				A51C7D1826DABAAC002C4218 /* Utils */,
+				A51C7D2C26DABE67002C4218 /* Enviroments */,
 				A51C7CC526DAAF9B002C4218 /* AppDelegate.swift */,
 				A51C7CC726DAAF9B002C4218 /* SceneDelegate.swift */,
 				A51C7CC926DAAF9B002C4218 /* ViewController.swift */,
@@ -129,6 +143,40 @@
 				A51C7CEC26DAAF9D002C4218 /* Info.plist */,
 			);
 			path = "Koombea PostUITests";
+			sourceTree = "<group>";
+		};
+		A51C7D0626DAB87F002C4218 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A51C7D2426DABC6B002C4218 /* EndPoints.swift */,
+				A51C7D0726DAB8A1002C4218 /* PostService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A51C7D0F26DAB8C6002C4218 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A51C7D1026DAB923002C4218 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A51C7D1826DABAAC002C4218 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A51C7D1926DABACB002C4218 /* ServiceErrors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A51C7D2C26DABE67002C4218 /* Enviroments */ = {
+			isa = PBXGroup;
+			children = (
+				A51C7D2E26DABED3002C4218 /* Release.xcconfig */,
+				A51C7D2D26DABE8C002C4218 /* Debug.xcconfig */,
+			);
+			path = Enviroments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51C7D0826DAB8A1002C4218 /* PostService.swift in Sources */,
 				A51C7CD026DAAF9B002C4218 /* Koombea_Post.xcdatamodeld in Sources */,
 				A51C7CCA26DAAF9B002C4218 /* ViewController.swift in Sources */,
+				A51C7D1A26DABACB002C4218 /* ServiceErrors.swift in Sources */,
+				A51C7D1126DAB923002C4218 /* Post.swift in Sources */,
 				A51C7CC626DAAF9B002C4218 /* AppDelegate.swift in Sources */,
+				A51C7D2526DABC6B002C4218 /* EndPoints.swift in Sources */,
 				A51C7CC826DAAF9B002C4218 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +373,7 @@
 /* Begin XCBuildConfiguration section */
 		A51C7CED26DAAF9D002C4218 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A51C7D2D26DABE8C002C4218 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -382,6 +435,7 @@
 		};
 		A51C7CEE26DAAF9D002C4218 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A51C7D2E26DABED3002C4218 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

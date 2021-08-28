@@ -1,0 +1,11 @@
+//
+//  Develop.xcconfig
+//  Koombea Post
+//
+//  Created by Wilmer Mendoza on 28/8/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_MAIN_URL = https:\/\/mock.koombea.io/mt/api/
