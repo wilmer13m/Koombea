@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A51C7CC626DAAF9B002C4218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7CC526DAAF9B002C4218 /* AppDelegate.swift */; };
+		A51C7CC826DAAF9B002C4218 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7CC726DAAF9B002C4218 /* SceneDelegate.swift */; };
+		A51C7CCA26DAAF9B002C4218 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7CC926DAAF9B002C4218 /* ViewController.swift */; };
+		A51C7CCD26DAAF9B002C4218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51C7CCB26DAAF9B002C4218 /* Main.storyboard */; };
+		A51C7CD026DAAF9B002C4218 /* Koombea_Post.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A51C7CCE26DAAF9B002C4218 /* Koombea_Post.xcdatamodeld */; };
+		A51C7CD226DAAF9D002C4218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51C7CD126DAAF9D002C4218 /* Assets.xcassets */; };
+		A51C7CD526DAAF9D002C4218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51C7CD326DAAF9D002C4218 /* LaunchScreen.storyboard */; };
+		A51C7CE026DAAF9D002C4218 /* Koombea_PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7CDF26DAAF9D002C4218 /* Koombea_PostTests.swift */; };
+		A51C7CEB26DAAF9D002C4218 /* Koombea_PostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7CEA26DAAF9D002C4218 /* Koombea_PostUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A51C7CDC26DAAF9D002C4218 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51C7CBA26DAAF9B002C4218 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51C7CC126DAAF9B002C4218;
+			remoteInfo = "Koombea Post";
+		};
+		A51C7CE726DAAF9D002C4218 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51C7CBA26DAAF9B002C4218 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51C7CC126DAAF9B002C4218;
+			remoteInfo = "Koombea Post";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A51C7CC226DAAF9B002C4218 /* Koombea Post.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koombea Post.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51C7CC526DAAF9B002C4218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A51C7CC726DAAF9B002C4218 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A51C7CC926DAAF9B002C4218 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A51C7CCC26DAAF9B002C4218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A51C7CCF26DAAF9B002C4218 /* Koombea_Post.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Koombea_Post.xcdatamodel; sourceTree = "<group>"; };
+		A51C7CD126DAAF9D002C4218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A51C7CD426DAAF9D002C4218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A51C7CD626DAAF9D002C4218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51C7CDB26DAAF9D002C4218 /* Koombea PostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Koombea PostTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51C7CDF26DAAF9D002C4218 /* Koombea_PostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koombea_PostTests.swift; sourceTree = "<group>"; };
+		A51C7CE126DAAF9D002C4218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51C7CE626DAAF9D002C4218 /* Koombea PostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Koombea PostUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51C7CEA26DAAF9D002C4218 /* Koombea_PostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koombea_PostUITests.swift; sourceTree = "<group>"; };
+		A51C7CEC26DAAF9D002C4218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A51C7CBF26DAAF9B002C4218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51C7CD826DAAF9D002C4218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51C7CE326DAAF9D002C4218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A51C7CB926DAAF9B002C4218 = {
+			isa = PBXGroup;
+			children = (
+				A51C7CC426DAAF9B002C4218 /* Koombea Post */,
+				A51C7CDE26DAAF9D002C4218 /* Koombea PostTests */,
+				A51C7CE926DAAF9D002C4218 /* Koombea PostUITests */,
+				A51C7CC326DAAF9B002C4218 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A51C7CC326DAAF9B002C4218 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A51C7CC226DAAF9B002C4218 /* Koombea Post.app */,
+				A51C7CDB26DAAF9D002C4218 /* Koombea PostTests.xctest */,
+				A51C7CE626DAAF9D002C4218 /* Koombea PostUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A51C7CC426DAAF9B002C4218 /* Koombea Post */ = {
+			isa = PBXGroup;
+			children = (
+				A51C7CC526DAAF9B002C4218 /* AppDelegate.swift */,
+				A51C7CC726DAAF9B002C4218 /* SceneDelegate.swift */,
+				A51C7CC926DAAF9B002C4218 /* ViewController.swift */,
+				A51C7CCB26DAAF9B002C4218 /* Main.storyboard */,
+				A51C7CD126DAAF9D002C4218 /* Assets.xcassets */,
+				A51C7CD326DAAF9D002C4218 /* LaunchScreen.storyboard */,
+				A51C7CD626DAAF9D002C4218 /* Info.plist */,
+				A51C7CCE26DAAF9B002C4218 /* Koombea_Post.xcdatamodeld */,
+			);
+			path = "Koombea Post";
+			sourceTree = "<group>";
+		};
+		A51C7CDE26DAAF9D002C4218 /* Koombea PostTests */ = {
+			isa = PBXGroup;
+			children = (
+				A51C7CDF26DAAF9D002C4218 /* Koombea_PostTests.swift */,
+				A51C7CE126DAAF9D002C4218 /* Info.plist */,
+			);
+			path = "Koombea PostTests";
+			sourceTree = "<group>";
+		};
+		A51C7CE926DAAF9D002C4218 /* Koombea PostUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A51C7CEA26DAAF9D002C4218 /* Koombea_PostUITests.swift */,
+				A51C7CEC26DAAF9D002C4218 /* Info.plist */,
+			);
+			path = "Koombea PostUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A51C7CC126DAAF9B002C4218 /* Koombea Post */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51C7CEF26DAAF9D002C4218 /* Build configuration list for PBXNativeTarget "Koombea Post" */;
+			buildPhases = (
+				A51C7CBE26DAAF9B002C4218 /* Sources */,
+				A51C7CBF26DAAF9B002C4218 /* Frameworks */,
+				A51C7CC026DAAF9B002C4218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Koombea Post";
+			productName = "Koombea Post";
+			productReference = A51C7CC226DAAF9B002C4218 /* Koombea Post.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A51C7CDA26DAAF9D002C4218 /* Koombea PostTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51C7CF226DAAF9D002C4218 /* Build configuration list for PBXNativeTarget "Koombea PostTests" */;
+			buildPhases = (
+				A51C7CD726DAAF9D002C4218 /* Sources */,
+				A51C7CD826DAAF9D002C4218 /* Frameworks */,
+				A51C7CD926DAAF9D002C4218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51C7CDD26DAAF9D002C4218 /* PBXTargetDependency */,
+			);
+			name = "Koombea PostTests";
+			productName = "Koombea PostTests";
+			productReference = A51C7CDB26DAAF9D002C4218 /* Koombea PostTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A51C7CE526DAAF9D002C4218 /* Koombea PostUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51C7CF526DAAF9D002C4218 /* Build configuration list for PBXNativeTarget "Koombea PostUITests" */;
+			buildPhases = (
+				A51C7CE226DAAF9D002C4218 /* Sources */,
+				A51C7CE326DAAF9D002C4218 /* Frameworks */,
+				A51C7CE426DAAF9D002C4218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51C7CE826DAAF9D002C4218 /* PBXTargetDependency */,
+			);
+			name = "Koombea PostUITests";
+			productName = "Koombea PostUITests";
+			productReference = A51C7CE626DAAF9D002C4218 /* Koombea PostUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A51C7CBA26DAAF9B002C4218 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A51C7CC126DAAF9B002C4218 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A51C7CDA26DAAF9D002C4218 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A51C7CC126DAAF9B002C4218;
+					};
+					A51C7CE526DAAF9D002C4218 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A51C7CC126DAAF9B002C4218;
+					};
+				};
+			};
+			buildConfigurationList = A51C7CBD26DAAF9B002C4218 /* Build configuration list for PBXProject "Koombea Post" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A51C7CB926DAAF9B002C4218;
+			productRefGroup = A51C7CC326DAAF9B002C4218 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A51C7CC126DAAF9B002C4218 /* Koombea Post */,
+				A51C7CDA26DAAF9D002C4218 /* Koombea PostTests */,
+				A51C7CE526DAAF9D002C4218 /* Koombea PostUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A51C7CC026DAAF9B002C4218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51C7CD526DAAF9D002C4218 /* LaunchScreen.storyboard in Resources */,
+				A51C7CD226DAAF9D002C4218 /* Assets.xcassets in Resources */,
+				A51C7CCD26DAAF9B002C4218 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51C7CD926DAAF9D002C4218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51C7CE426DAAF9D002C4218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A51C7CBE26DAAF9B002C4218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51C7CD026DAAF9B002C4218 /* Koombea_Post.xcdatamodeld in Sources */,
+				A51C7CCA26DAAF9B002C4218 /* ViewController.swift in Sources */,
+				A51C7CC626DAAF9B002C4218 /* AppDelegate.swift in Sources */,
+				A51C7CC826DAAF9B002C4218 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51C7CD726DAAF9D002C4218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51C7CE026DAAF9D002C4218 /* Koombea_PostTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51C7CE226DAAF9D002C4218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51C7CEB26DAAF9D002C4218 /* Koombea_PostUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A51C7CDD26DAAF9D002C4218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51C7CC126DAAF9B002C4218 /* Koombea Post */;
+			targetProxy = A51C7CDC26DAAF9D002C4218 /* PBXContainerItemProxy */;
+		};
+		A51C7CE826DAAF9D002C4218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51C7CC126DAAF9B002C4218 /* Koombea Post */;
+			targetProxy = A51C7CE726DAAF9D002C4218 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A51C7CCB26DAAF9B002C4218 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51C7CCC26DAAF9B002C4218 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A51C7CD326DAAF9D002C4218 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51C7CD426DAAF9D002C4218 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A51C7CED26DAAF9D002C4218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A51C7CEE26DAAF9D002C4218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A51C7CF026DAAF9D002C4218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 645UX58X3D;
+				INFOPLIST_FILE = "Koombea Post/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wilmer.mendoza.Koombea-Post";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A51C7CF126DAAF9D002C4218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 645UX58X3D;
+				INFOPLIST_FILE = "Koombea Post/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wilmer.mendoza.Koombea-Post";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A51C7CF326DAAF9D002C4218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 645UX58X3D;
+				INFOPLIST_FILE = "Koombea PostTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wilmer.mendoza.Koombea-PostTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Koombea Post.app/Koombea Post";
+			};
+			name = Debug;
+		};
+		A51C7CF426DAAF9D002C4218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 645UX58X3D;
+				INFOPLIST_FILE = "Koombea PostTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wilmer.mendoza.Koombea-PostTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Koombea Post.app/Koombea Post";
+			};
+			name = Release;
+		};
+		A51C7CF626DAAF9D002C4218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 645UX58X3D;
+				INFOPLIST_FILE = "Koombea PostUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wilmer.mendoza.Koombea-PostUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Koombea Post";
+			};
+			name = Debug;
+		};
+		A51C7CF726DAAF9D002C4218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 645UX58X3D;
+				INFOPLIST_FILE = "Koombea PostUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wilmer.mendoza.Koombea-PostUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Koombea Post";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A51C7CBD26DAAF9B002C4218 /* Build configuration list for PBXProject "Koombea Post" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51C7CED26DAAF9D002C4218 /* Debug */,
+				A51C7CEE26DAAF9D002C4218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A51C7CEF26DAAF9D002C4218 /* Build configuration list for PBXNativeTarget "Koombea Post" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51C7CF026DAAF9D002C4218 /* Debug */,
+				A51C7CF126DAAF9D002C4218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A51C7CF226DAAF9D002C4218 /* Build configuration list for PBXNativeTarget "Koombea PostTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51C7CF326DAAF9D002C4218 /* Debug */,
+				A51C7CF426DAAF9D002C4218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A51C7CF526DAAF9D002C4218 /* Build configuration list for PBXNativeTarget "Koombea PostUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51C7CF626DAAF9D002C4218 /* Debug */,
+				A51C7CF726DAAF9D002C4218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A51C7CCE26DAAF9B002C4218 /* Koombea_Post.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A51C7CCF26DAAF9B002C4218 /* Koombea_Post.xcdatamodel */,
+			);
+			currentVersion = A51C7CCF26DAAF9B002C4218 /* Koombea_Post.xcdatamodel */;
+			path = Koombea_Post.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A51C7CBA26DAAF9B002C4218 /* Project object */;
+}
