@@ -27,6 +27,8 @@ class FeedViewController: UIViewController {
         static let headerCollectionView = "HeaderPostCollectionReusableView"
         static let singlePostCellNibName = "SinglePostCollectionViewCell"
         static let twoPicsCellNibName = "TwoPicsCollectionViewCell"
+        static let threePicsCellNibName = "ThreePicsCollectionViewCell"
+
     }
     //MARK:- ViewController's life cycle
     override func viewDidLoad() {
@@ -45,6 +47,8 @@ class FeedViewController: UIViewController {
                                     forCellWithReuseIdentifier: SinglePostCollectionViewCell.reuseIdentifier)
         postCollectionView.register(UINib(nibName: Constants.twoPicsCellNibName, bundle: nil),
                                     forCellWithReuseIdentifier: TwoPicsCollectionViewCell.reuseIdentifier)
+        postCollectionView.register(UINib(nibName: Constants.threePicsCellNibName, bundle: nil),
+                                    forCellWithReuseIdentifier: ThreePicsCollectionViewCell.reuseIdentifier)
 
     }
     
@@ -121,7 +125,7 @@ extension FeedViewController: UICollectionViewDataSource {
 
         case .threPics:
             
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SinglePostCollectionViewCell.reuseIdentifier, for: indexPath) as? SinglePostCollectionViewCell else { fatalError("com_koobea_post_error_deque_cell".localized())
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ThreePicsCollectionViewCell.reuseIdentifier, for: indexPath) as? ThreePicsCollectionViewCell else { fatalError("com_koobea_post_error_deque_cell".localized())
             }
             
             if let post = presenter?.getPostForRow(for: indexPath) {
@@ -187,7 +191,7 @@ extension FeedViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: collectionView.frame.width, height: collectionView.frame.height * 0.25)
 
         default:
-            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height * 0.7)
+            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height * 0.78)
         }
     }
     

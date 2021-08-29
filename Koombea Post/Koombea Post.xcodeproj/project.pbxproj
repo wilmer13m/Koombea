@@ -39,6 +39,8 @@
 		A571E50726DC0523008E7443 /* TwoPicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571E50526DC0523008E7443 /* TwoPicsCollectionViewCell.swift */; };
 		A571E50826DC0523008E7443 /* TwoPicsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A571E50626DC0523008E7443 /* TwoPicsCollectionViewCell.xib */; };
 		A571E50D26DC147A008E7443 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571E50C26DC147A008E7443 /* CellType.swift */; };
+		A5B627A126DC22E4002B3923 /* ThreePicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B6279F26DC22E4002B3923 /* ThreePicsCollectionViewCell.swift */; };
+		A5B627A226DC22E4002B3923 /* ThreePicsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B627A026DC22E4002B3923 /* ThreePicsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		A571E50526DC0523008E7443 /* TwoPicsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPicsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A571E50626DC0523008E7443 /* TwoPicsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoPicsCollectionViewCell.xib; sourceTree = "<group>"; };
 		A571E50C26DC147A008E7443 /* CellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
+		A5B6279F26DC22E4002B3923 /* ThreePicsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePicsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A5B627A026DC22E4002B3923 /* ThreePicsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreePicsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +248,8 @@
 				A51C7DBA26DAD69F002C4218 /* SinglePostCollectionViewCell.xib */,
 				A571E50526DC0523008E7443 /* TwoPicsCollectionViewCell.swift */,
 				A571E50626DC0523008E7443 /* TwoPicsCollectionViewCell.xib */,
+				A5B6279F26DC22E4002B3923 /* ThreePicsCollectionViewCell.swift */,
+				A5B627A026DC22E4002B3923 /* ThreePicsCollectionViewCell.xib */,
 			);
 			path = PostCells;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 				A571E4DC26DB45E1008E7443 /* Localizable.strings in Resources */,
 				A51C7DBC26DAD69F002C4218 /* SinglePostCollectionViewCell.xib in Resources */,
 				A51C7CD526DAAF9D002C4218 /* LaunchScreen.storyboard in Resources */,
+				A5B627A226DC22E4002B3923 /* ThreePicsCollectionViewCell.xib in Resources */,
 				A51C7CD226DAAF9D002C4218 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B627A126DC22E4002B3923 /* ThreePicsCollectionViewCell.swift in Sources */,
 				A571E4F926DBF91D008E7443 /* HeaderPostModel.swift in Sources */,
 				A51C7DD226DAD8F5002C4218 /* FeedPresenter.swift in Sources */,
 				A51C7D0826DAB8A1002C4218 /* FeedService.swift in Sources */,
