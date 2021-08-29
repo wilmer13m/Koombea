@@ -19,6 +19,8 @@ protocol ViewToPresenterFeedProtocol: class {
     func numberOfSection() -> Int
     func refresh()
     func postInfo(for indexPath: IndexPath) -> Feed.PostData?
+    func getPostForRow(for indexPath: IndexPath) -> Feed.PostData.Post?
+    func getTypeCell(for row: IndexPath) -> CellType
 }
 
 //MARK: View Output (Presenter - View)

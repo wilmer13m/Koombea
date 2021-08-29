@@ -13,15 +13,21 @@ extension String {
         return NSLocalizedString(self, tableName: tableName, value: (self), comment: "")
     }
     
-    func formatterDatedString(fromFormat: DateFormatter, toFormat: DateFormatter) -> String? {
+    func ordinalDate() -> String {
         
-        let myDate = fromFormat.date(from: self)
+        guard let safeDate = Date(string: self, formatter: DateFormatter.originalPostDateFormatter) else { return "" }
+
         
-        guard let secureDate = myDate else {
-            return nil
-        }
+        let ordinalFormatter = NumberFormatter()
+        ordinalFormatter.numberStyle = .ordinal
         
-        return toFormat.string(from: secureDate)
+        let day = Calendar.current.component(.day, from: safeDate)
+        let dayOrdinal = ordinalFormatter.string(from: NSNumber(value: day))!
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM '\(dayOrdinal)'"
+        
+        return dateFormatter.string(from: safeDate)
     }
 }
 

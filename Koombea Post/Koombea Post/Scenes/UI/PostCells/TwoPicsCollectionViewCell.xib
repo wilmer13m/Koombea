@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TwoPicsCollectionViewCellId" id="gTV-IL-0wX" customClass="TwoPicsCollectionViewCell" customModule="Koombea_Post" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="234"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="234"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UGf-no-FJm">
+                        <rect key="frame" x="10" y="43.5" width="299" height="190.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L7p-oe-oMA">
+                                <rect key="frame" x="0.0" y="0.0" width="144.5" height="190.5"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="250" constant="144.5" id="14U-hB-rHH"/>
+                                    <constraint firstAttribute="height" priority="250" constant="190.5" id="ZLS-QV-fh5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EaH-WQ-bHP">
+                                <rect key="frame" x="154.5" y="0.0" width="144.5" height="190.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="250" constant="144.5" id="BtA-gS-f5u"/>
+                                    <constraint firstAttribute="height" priority="250" constant="190.5" id="fTA-ev-UvX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUV-rd-0V8">
+                        <rect key="frame" x="12" y="15" width="295" height="13.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13.5" id="fqF-dg-aco"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.36434809909999999" green="1" blue="0.42779493909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="nUV-rd-0V8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="Q5b-jA-Thr"/>
+                <constraint firstItem="UGf-no-FJm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="UQb-E7-ZDT"/>
+                <constraint firstAttribute="trailing" secondItem="UGf-no-FJm" secondAttribute="trailing" constant="10" id="XYA-Jg-aFg"/>
+                <constraint firstItem="nUV-rd-0V8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="XwU-ah-Xom"/>
+                <constraint firstAttribute="bottom" secondItem="UGf-no-FJm" secondAttribute="bottom" id="bQG-F5-SAM"/>
+                <constraint firstItem="UGf-no-FJm" firstAttribute="top" secondItem="nUV-rd-0V8" secondAttribute="bottom" constant="15" id="gl3-7p-kez"/>
+                <constraint firstAttribute="trailing" secondItem="nUV-rd-0V8" secondAttribute="trailing" constant="12" id="t1h-fd-zRn"/>
+            </constraints>
+            <size key="customSize" width="319" height="234"/>
+            <connections>
+                <outlet property="datePostLabel" destination="nUV-rd-0V8" id="llE-SP-qix"/>
+                <outlet property="fisrtPicImageView" destination="L7p-oe-oMA" id="4PF-Co-ZGD"/>
+                <outlet property="secondPicImageView" destination="EaH-WQ-bHP" id="PTu-1i-KVV"/>
+            </connections>
+            <point key="canvasLocation" x="-57.24637681159421" y="11.383928571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

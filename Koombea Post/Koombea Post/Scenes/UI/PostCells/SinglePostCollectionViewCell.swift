@@ -10,7 +10,6 @@ import UIKit
 class SinglePostCollectionViewCell: UICollectionViewCell {
 
     //MARK:- Outlets
-    @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var postImageView: UIImageView!
     
@@ -18,16 +17,13 @@ class SinglePostCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 
     var settings: PostCellModel? {
         didSet {
             
-            if !(settings?.posts.isEmpty ?? true)  {
-                dateLabel.text = settings?.posts[0].datePost
-                postImageView.loadImageFrom(url: settings?.posts[0].postImageUrl[0] ?? "")
-            }
+            dateLabel.text = settings?.post.datePost
+            postImageView.loadImageFrom(url: settings?.post.postImageUrl[0] ?? "")
         }
     }
 }

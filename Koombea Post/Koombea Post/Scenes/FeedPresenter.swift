@@ -14,7 +14,7 @@ class FeedPresenter: ViewToPresenterFeedProtocol {
     var interactor: PrensenterToInteractorFeedProtocol?
     var router: PresenterToRouterFeedProtocol?
     
-    var posts: [Feed.PostData]?
+    var postsData: [Feed.PostData]?
     
     //Mark:- ViewToPresenterFeedProtocol Funcs
     func viewDidLoad() {
@@ -23,11 +23,11 @@ class FeedPresenter: ViewToPresenterFeedProtocol {
     }
     
     func numberOfRows(in section: Int) -> Int {
-        posts?[section].posts.count ?? 0
+        postsData?[section].posts.count ?? 0
     }
     
     func numberOfSection() -> Int {
-        posts?.count ?? 0
+        postsData?.count ?? 0
     }
     
     func refresh() {
@@ -35,8 +35,21 @@ class FeedPresenter: ViewToPresenterFeedProtocol {
     }
     
     func postInfo(for indexPath: IndexPath) -> Feed.PostData? {
-        return posts?[indexPath.section]
+        return postsData?[indexPath.section] //data para la seccion 
     }
+    
+    func getPostForRow(for indexPath: IndexPath) -> Feed.PostData.Post? {
+        return postsData?[indexPath.section].posts[indexPath.row]
+    }
+    
+    func getTypeCell(for indexPath: IndexPath) -> CellType {
+        
+        let numberOfPics = postsData?[indexPath.section].posts[indexPath.row].pics?.count ?? 0
+        let typeCell = CellType(rawValue: numberOfPics > 3 ? 4 : numberOfPics)
+        
+        return typeCell ?? .singlePic
+    }
+    
 }
 
 //MARK:- Extension
@@ -45,7 +58,7 @@ extension FeedPresenter: InteractorToPresenterFeedProtocol {
     func fetchFeedSuccess(feed: Feed) {
         
         view?.hideHUD()
-        posts = feed.data
+        postsData = feed.data
         view?.onFetchFeedSuccess()
     }
     

@@ -24,8 +24,9 @@ class FeedViewController: UIViewController {
     }()
     
     private struct Constants {
-        static let nibCarouselCell = "SinglePostCollectionViewCell"
         static let headerCollectionView = "HeaderPostCollectionReusableView"
+        static let singlePostCellNibName = "SinglePostCollectionViewCell"
+        static let twoPicsCellNibName = "TwoPicsCollectionViewCell"
     }
     //MARK:- ViewController's life cycle
     override func viewDidLoad() {
@@ -40,9 +41,11 @@ class FeedViewController: UIViewController {
         postCollectionView.addSubview(refreshControl)
 //        collectionView.collectionViewLayout = HomeViewController.createCompLayout()
         postCollectionView.register(UINib.init(nibName: Constants.headerCollectionView, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderPostCollectionReusableView.reeuseIdentifier)
-
-        postCollectionView.register(UINib(nibName: Constants.nibCarouselCell, bundle: nil),
+        postCollectionView.register(UINib(nibName: Constants.singlePostCellNibName, bundle: nil),
                                     forCellWithReuseIdentifier: SinglePostCollectionViewCell.reuseIdentifier)
+        postCollectionView.register(UINib(nibName: Constants.twoPicsCellNibName, bundle: nil),
+                                    forCellWithReuseIdentifier: TwoPicsCollectionViewCell.reuseIdentifier)
+
     }
     
     // MARK: - Actions
@@ -89,14 +92,53 @@ extension FeedViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+                
+        guard let typeCell = presenter?.getTypeCell(for: indexPath) else { fatalError("com_koobea_post_error_deque_cell".localized())
+        }
+
+        switch typeCell {
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SinglePostCollectionViewCell.reuseIdentifier, for: indexPath) as? SinglePostCollectionViewCell else { fatalError("com_koobea_post_error_deque_cell".localized())
+        case .singlePic:
+            
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SinglePostCollectionViewCell.reuseIdentifier, for: indexPath) as? SinglePostCollectionViewCell else { fatalError("com_koobea_post_error_deque_cell".localized())
+            }
+            
+            if let post = presenter?.getPostForRow(for: indexPath) {
+                cell.settings = PostCellModel(postData: post)
+            }
+            
+            return cell
+            
+        case .twoPics:
+        
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TwoPicsCollectionViewCell.reuseIdentifier, for: indexPath) as? TwoPicsCollectionViewCell else { fatalError("com_koobea_post_error_deque_cell".localized())
+            }
+            
+            if let post = presenter?.getPostForRow(for: indexPath) {
+                cell.settings = PostCellModel(postData: post)
+            }
+            return cell
+
+        case .threPics:
+            
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SinglePostCollectionViewCell.reuseIdentifier, for: indexPath) as? SinglePostCollectionViewCell else { fatalError("com_koobea_post_error_deque_cell".localized())
+            }
+            
+            if let post = presenter?.getPostForRow(for: indexPath) {
+                cell.settings = PostCellModel(postData: post)
+            }
+            return cell
+
+        case .moreThanThreePics:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SinglePostCollectionViewCell.reuseIdentifier, for: indexPath) as? SinglePostCollectionViewCell else { fatalError("com_koobea_post_error_deque_cell".localized())
+            }
+        
+            if let post = presenter?.getPostForRow(for: indexPath) {
+            cell.settings = PostCellModel(postData: post)
+            }
+            return cell
         }
-    
-        if let postData = presenter?.postInfo(for: indexPath) {
-            cell.settings = PostCellModel(postData: postData)
-        }
-        return cell
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -127,14 +169,26 @@ extension FeedViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
-        return CGSize(width: collectionView.frame.width, height: 45)
+        return CGSize(width: collectionView.frame.width, height: 60)
     }
 }
 
 extension FeedViewController: UICollectionViewDelegateFlowLayout {
    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height * 0.4)
+        
+        let typeCell = presenter?.getTypeCell(for: indexPath)
+        
+        switch typeCell {
+        case .singlePic:
+            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height * 0.4)
+
+        case .twoPics:
+            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height * 0.25)
+
+        default:
+            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height * 0.7)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

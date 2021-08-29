@@ -36,6 +36,9 @@
 		A571E4F026DBF6AE008E7443 /* HeaderPostCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571E4EE26DBF6AE008E7443 /* HeaderPostCollectionReusableView.swift */; };
 		A571E4F126DBF6AE008E7443 /* HeaderPostCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A571E4EF26DBF6AE008E7443 /* HeaderPostCollectionReusableView.xib */; };
 		A571E4F926DBF91D008E7443 /* HeaderPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571E4F826DBF91D008E7443 /* HeaderPostModel.swift */; };
+		A571E50726DC0523008E7443 /* TwoPicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571E50526DC0523008E7443 /* TwoPicsCollectionViewCell.swift */; };
+		A571E50826DC0523008E7443 /* TwoPicsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A571E50626DC0523008E7443 /* TwoPicsCollectionViewCell.xib */; };
+		A571E50D26DC147A008E7443 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571E50C26DC147A008E7443 /* CellType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,9 @@
 		A571E4EE26DBF6AE008E7443 /* HeaderPostCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderPostCollectionReusableView.swift; sourceTree = "<group>"; };
 		A571E4EF26DBF6AE008E7443 /* HeaderPostCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderPostCollectionReusableView.xib; sourceTree = "<group>"; };
 		A571E4F826DBF91D008E7443 /* HeaderPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderPostModel.swift; sourceTree = "<group>"; };
+		A571E50526DC0523008E7443 /* TwoPicsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPicsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A571E50626DC0523008E7443 /* TwoPicsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoPicsCollectionViewCell.xib; sourceTree = "<group>"; };
+		A571E50C26DC147A008E7443 /* CellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +209,7 @@
 			children = (
 				A51C7E0426DB1D1E002C4218 /* Extensions */,
 				A51C7D1926DABACB002C4218 /* ServiceErrors.swift */,
+				A571E50C26DC147A008E7443 /* CellType.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -235,6 +242,8 @@
 			children = (
 				A51C7DB926DAD69F002C4218 /* SinglePostCollectionViewCell.swift */,
 				A51C7DBA26DAD69F002C4218 /* SinglePostCollectionViewCell.xib */,
+				A571E50526DC0523008E7443 /* TwoPicsCollectionViewCell.swift */,
+				A571E50626DC0523008E7443 /* TwoPicsCollectionViewCell.xib */,
 			);
 			path = PostCells;
 			sourceTree = "<group>";
@@ -379,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A571E4F126DBF6AE008E7443 /* HeaderPostCollectionReusableView.xib in Resources */,
+				A571E50826DC0523008E7443 /* TwoPicsCollectionViewCell.xib in Resources */,
 				A51C7DA926DAD213002C4218 /* FeedViewController.xib in Resources */,
 				A571E4DC26DB45E1008E7443 /* Localizable.strings in Resources */,
 				A51C7DBC26DAD69F002C4218 /* SinglePostCollectionViewCell.xib in Resources */,
@@ -418,12 +428,14 @@
 				A51C7D1A26DABACB002C4218 /* ServiceErrors.swift in Sources */,
 				A51C7DBB26DAD69F002C4218 /* SinglePostCollectionViewCell.swift in Sources */,
 				A51C7DA826DAD213002C4218 /* FeedViewController.swift in Sources */,
+				A571E50726DC0523008E7443 /* TwoPicsCollectionViewCell.swift in Sources */,
 				A51C7D1126DAB923002C4218 /* Feed.swift in Sources */,
 				A51C7D5F26DACB0E002C4218 /* DateFormatter+Extension.swift in Sources */,
 				A51C7DD726DAD911002C4218 /* FeedInteractor.swift in Sources */,
 				A51C7CC626DAAF9B002C4218 /* AppDelegate.swift in Sources */,
 				A571E4F026DBF6AE008E7443 /* HeaderPostCollectionReusableView.swift in Sources */,
 				A51C7DDF26DAD933002C4218 /* FeedRouter.swift in Sources */,
+				A571E50D26DC147A008E7443 /* CellType.swift in Sources */,
 				A51C7D2526DABC6B002C4218 /* EndPoints.swift in Sources */,
 				A571E4CB26DB36DE008E7443 /* UIImageView+Extension.swift in Sources */,
 				A51C7CC826DAAF9B002C4218 /* SceneDelegate.swift in Sources */,
