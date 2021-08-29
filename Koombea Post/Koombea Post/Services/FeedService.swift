@@ -37,7 +37,6 @@ class FeedService {
             
             do {
                 let deconder = JSONDecoder()
-                deconder.keyDecodingStrategy = .convertFromSnakeCase
                 let results = try deconder.decode(Feed.self, from: data)
                 completed(.success(results))
                 

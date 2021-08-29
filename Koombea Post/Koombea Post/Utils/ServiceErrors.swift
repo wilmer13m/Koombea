@@ -8,7 +8,7 @@
 import Foundation
 
 enum ServiceErrors: String, Error {
-    case invalidData = "Sorry. Somthing went wrong, try again"
-    case invalidResponse = "Server error. Please modify your search and try again"
-    case unknow = "unknow error..."
+    case invalidData = "com_koobea_post_invalid_data_error"
+    case invalidResponse = "com_koobea_post_invalid_response_error"
+    case unknow = "com_koobea_post_uknown_error"
 }

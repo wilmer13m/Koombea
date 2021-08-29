@@ -11,7 +11,7 @@ class FeedInteractor: PrensenterToInteractorFeedProtocol {
       
     weak var presenter: InteractorToPresenterFeedProtocol?
     
-    var feed: Feed?
+    var feed: Feed? //***
     
     func retrieveFeed() {
         

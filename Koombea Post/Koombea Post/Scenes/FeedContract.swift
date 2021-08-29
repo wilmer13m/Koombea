@@ -18,12 +18,7 @@ protocol ViewToPresenterFeedProtocol: class {
     func numberOfRows(in section: Int) -> Int
     func numberOfSection() -> Int
     func refresh()
-//    func tvShow(for indexpath: IndexPath) -> TvShowCellModel?
-//    func didSelectRowAt(index: Int)
-//    func buttonTvShowTapped(of type: TvShowType)
-//    func logOut()
-//    func goToLogin()
-//    func goToProfile()
+    func postInfo(for indexPath: IndexPath) -> Feed.PostData?
 }
 
 //MARK: View Output (Presenter - View)
@@ -45,14 +40,6 @@ protocol PrensenterToInteractorFeedProtocol: class {
 protocol InteractorToPresenterFeedProtocol: class {
     func fetchFeedSuccess(feed: Feed)
     func fetchFeedFailure(error: ServiceErrors)
-
-//    func fetchTvShowsSuccess(tvShows: TvShowResponse)
-//    func fetchTvShowsFailure(error: ApiError)
-//    func fetchTvShowsFailureNoConnection()
-//    func getTvShowSuccess(_ tvShow: TvShowResponse.Result)
-//    func getTvShowFailure()
-//    func logOutSuccess()
-//    func logOutFail()
 }
 
 //MARK: Router Input (Presenter - Router)

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Koombea Post
+
+  Created by Wilmer Mendoza on 29/8/21.
+*/
+
+
+"com_koobea_post_refreshing" = "Refreshing";
+"com_koobea_post_error_deque_cell" = "Error on dequeue cell";
+"com_koobea_post_invalid_data_error" = "Sorry. Somthing went wrong, try again";
+"com_koobea_post_invalid_response_error" = "Server error. Please try again later";
+"com_koobea_post_uknown_error" = "unknow error...";

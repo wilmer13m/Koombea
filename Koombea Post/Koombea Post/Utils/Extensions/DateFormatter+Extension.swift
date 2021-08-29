@@ -11,13 +11,8 @@ extension DateFormatter {
     
     static let originalPostDateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyy-MM-dd'T'HH:mm:ssZ"
-        return formatter
-    }()
-    
-    static let showPostDateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMM"
+        formatter.dateFormat = "E MMMM d yyyy HH:mm:ss 'GMT'ZZZ"
+        formatter.timeZone =  TimeZone(abbreviation: "GMT-4")
         return formatter
     }()
 }

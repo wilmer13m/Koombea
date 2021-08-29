@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderPostCollectionReusableViewId" id="U6b-Vx-4bR" customClass="HeaderPostCollectionReusableView" customModule="Koombea_Post" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AjI-li-08e">
+                    <rect key="frame" x="111.5" y="15" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="JuV-U4-egp"/>
+                        <constraint firstAttribute="height" constant="33" id="cJS-LG-EBe"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="xVk-tz-cTv">
+                    <rect key="frame" x="153.5" y="17" width="60.5" height="29"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oki-8F-RZ5">
+                            <rect key="frame" x="0.0" y="0.0" width="60.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTe-0T-Yv2">
+                            <rect key="frame" x="0.0" y="15.5" width="60.5" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="AjI-li-08e" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="15" id="SbC-p0-0HK"/>
+                <constraint firstItem="xVk-tz-cTv" firstAttribute="leading" secondItem="AjI-li-08e" secondAttribute="trailing" constant="9" id="XYI-fJ-IJ2"/>
+                <constraint firstItem="AjI-li-08e" firstAttribute="centerX" secondItem="VXr-Tz-HHm" secondAttribute="centerX" multiplier="0.8" id="b0Z-BL-NEz"/>
+                <constraint firstItem="xVk-tz-cTv" firstAttribute="centerY" secondItem="AjI-li-08e" secondAttribute="centerY" id="kRY-as-Tbe"/>
+            </constraints>
+            <connections>
+                <outlet property="avatarImageView" destination="AjI-li-08e" id="LF1-3V-iDw"/>
+                <outlet property="emailLabel" destination="lTe-0T-Yv2" id="5ii-9e-a7u"/>
+                <outlet property="userNameLabel" destination="Oki-8F-RZ5" id="cre-Dz-vSF"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
+        </collectionReusableView>
+    </objects>
+</document>

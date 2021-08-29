@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Koombea Post
+
+  Created by Wilmer Mendoza on 29/8/21.
+  
+*/
+"com_koobea_post_refreshing" = "Refrescando";
+"com_koobea_post_error_deque_cell" = "Error haciendo el dequeue de la celda";
+"com_koobea_post_invalid_data_error" = "Lo sentimos. Algo sucedio, por favor intentalo de nuevo";
+"com_koobea_post_invalid_response_error" = "Error de servidor. Please intente de nuevo más tarde.";
+"com_koobea_post_uknown_error" = "Error desconocido...";

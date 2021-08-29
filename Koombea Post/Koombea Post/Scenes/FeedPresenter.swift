@@ -8,17 +8,16 @@
 import UIKit
 
 class FeedPresenter: ViewToPresenterFeedProtocol {
-   
+    
     weak var view: PresenterToViewFeedProtocol?
     
     var interactor: PrensenterToInteractorFeedProtocol?
     var router: PresenterToRouterFeedProtocol?
     
-    var posts: [Feed.User]?
+    var posts: [Feed.PostData]?
     
     //Mark:- ViewToPresenterFeedProtocol Funcs
     func viewDidLoad() {
-        
         view?.showHUD()
         interactor?.retrieveFeed()
     }
@@ -33,6 +32,10 @@ class FeedPresenter: ViewToPresenterFeedProtocol {
     
     func refresh() {
         interactor?.retrieveFeed()
+    }
+    
+    func postInfo(for indexPath: IndexPath) -> Feed.PostData? {
+        return posts?[indexPath.section]
     }
 }
 
