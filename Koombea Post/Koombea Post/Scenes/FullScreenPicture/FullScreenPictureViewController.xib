@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FullScreenPictureViewController" customModule="Koombea_Post" customModuleProvider="target">
+            <connections>
+                <outlet property="blurView" destination="pOP-gO-yKz" id="Mhg-9E-ohY"/>
+                <outlet property="imageView" destination="Xum-bB-lhh" id="vwa-NI-O8d"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOP-gO-yKz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Xum-bB-lhh">
+                    <rect key="frame" x="0.0" y="269" width="414" height="358"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pOP-gO-yKz" secondAttribute="bottom" id="4fy-NE-SY0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xum-bB-lhh" secondAttribute="trailing" id="Bk4-CT-1GL"/>
+                <constraint firstItem="Xum-bB-lhh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SZH-Nh-EPm"/>
+                <constraint firstItem="Xum-bB-lhh" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="YIz-Zq-FgB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pOP-gO-yKz" secondAttribute="trailing" id="bwu-q3-1Di"/>
+                <constraint firstItem="Xum-bB-lhh" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ftr-Sj-HrO"/>
+                <constraint firstItem="pOP-gO-yKz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hiG-7D-7vB"/>
+                <constraint firstItem="pOP-gO-yKz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xRn-Id-MOE"/>
+            </constraints>
+            <point key="canvasLocation" x="-146" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splash" width="750" height="1624"/>
+    </resources>
+</document>

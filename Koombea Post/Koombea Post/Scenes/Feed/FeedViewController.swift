@@ -28,8 +28,11 @@ class FeedViewController: UIViewController {
         static let singlePostCellNibName = "SinglePostCollectionViewCell"
         static let twoPicsCellNibName = "TwoPicsCollectionViewCell"
         static let threePicsCellNibName = "ThreePicsCollectionViewCell"
-
+        static let manyPicsCellNibName = "ManyPicsCollectionViewCell"
+        static let headerHeight: CGFloat = 50
+        static let spaceBetweenRows: CGFloat = 10
     }
+    
     //MARK:- ViewController's life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +43,8 @@ class FeedViewController: UIViewController {
     
     //MARK:- Settings
     func settingCollectionView() {
+        
         postCollectionView.addSubview(refreshControl)
-//        collectionView.collectionViewLayout = HomeViewController.createCompLayout()
         postCollectionView.register(UINib.init(nibName: Constants.headerCollectionView, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderPostCollectionReusableView.reeuseIdentifier)
         postCollectionView.register(UINib(nibName: Constants.singlePostCellNibName, bundle: nil),
                                     forCellWithReuseIdentifier: SinglePostCollectionViewCell.reuseIdentifier)
@@ -49,7 +52,8 @@ class FeedViewController: UIViewController {
                                     forCellWithReuseIdentifier: TwoPicsCollectionViewCell.reuseIdentifier)
         postCollectionView.register(UINib(nibName: Constants.threePicsCellNibName, bundle: nil),
                                     forCellWithReuseIdentifier: ThreePicsCollectionViewCell.reuseIdentifier)
-
+        postCollectionView.register(UINib(nibName: Constants.manyPicsCellNibName, bundle: nil),
+                                    forCellWithReuseIdentifier: ManyPicsCollectionViewCell.reuseIdentifier)
     }
     
     // MARK: - Actions
@@ -97,8 +101,7 @@ extension FeedViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
                 
-        guard let typeCell = presenter?.getTypeCell(for: indexPath) else { fatalError("com_koobea_post_error_deque_cell".localized())
-        }
+        guard let typeCell = presenter?.getTypeCell(for: indexPath) else { fatalError("com_koobea_post_error_deque_cell".localized()) }
 
         switch typeCell {
         
@@ -111,6 +114,8 @@ extension FeedViewController: UICollectionViewDataSource {
                 cell.settings = PostCellModel(postData: post)
             }
             
+            cell.delegate = self
+            
             return cell
             
         case .twoPics:
@@ -121,6 +126,8 @@ extension FeedViewController: UICollectionViewDataSource {
             if let post = presenter?.getPostForRow(for: indexPath) {
                 cell.settings = PostCellModel(postData: post)
             }
+            
+            cell.delegate = self
             return cell
 
         case .threPics:
@@ -131,18 +138,23 @@ extension FeedViewController: UICollectionViewDataSource {
             if let post = presenter?.getPostForRow(for: indexPath) {
                 cell.settings = PostCellModel(postData: post)
             }
-            return cell
+            
+            cell.delegate = self
 
+            return cell
+            
         case .moreThanThreePics:
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SinglePostCollectionViewCell.reuseIdentifier, for: indexPath) as? SinglePostCollectionViewCell else { fatalError("com_koobea_post_error_deque_cell".localized())
+            
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ManyPicsCollectionViewCell.reuseIdentifier, for: indexPath) as? ManyPicsCollectionViewCell else { fatalError("com_koobea_post_error_deque_cell".localized())
             }
         
             if let post = presenter?.getPostForRow(for: indexPath) {
             cell.settings = PostCellModel(postData: post)
             }
+            
+            cell.delegate = self
             return cell
         }
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -167,13 +179,9 @@ extension FeedViewController: UICollectionViewDataSource {
 
 extension FeedViewController: UICollectionViewDelegate {
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
-    }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
-        return CGSize(width: collectionView.frame.width, height: 60)
+        return CGSize(width: collectionView.frame.width, height: Constants.headerHeight)
     }
 }
 
@@ -196,6 +204,13 @@ extension FeedViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return Constants.spaceBetweenRows
+    }
+}
+
+extension FeedViewController: ImageSelectecion {
+    
+    func openImage(image: UIImage?) {
+        presenter?.router?.pushToFullScreenPitcure(on: self, with: image!)
     }
 }

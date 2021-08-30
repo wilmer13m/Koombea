@@ -10,9 +10,7 @@ import Foundation
 class FeedInteractor: PrensenterToInteractorFeedProtocol {
       
     weak var presenter: InteractorToPresenterFeedProtocol?
-    
-    var feed: Feed? //***
-    
+        
     func retrieveFeed() {
         
         FeedService.shared.getPosts { [weak self] (result) in
@@ -24,8 +22,8 @@ class FeedInteractor: PrensenterToInteractorFeedProtocol {
             switch result {
             
             case .success(let response):
-                self.feed = response
-                self.presenter?.fetchFeedSuccess(feed: self.feed!)
+                
+                self.presenter?.fetchFeedSuccess(feed: response)
 
             case .failure(let error):
                 self.presenter?.fetchFeedFailure(error: error)

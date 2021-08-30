@@ -41,6 +41,17 @@
 		A571E50D26DC147A008E7443 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571E50C26DC147A008E7443 /* CellType.swift */; };
 		A5B627A126DC22E4002B3923 /* ThreePicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B6279F26DC22E4002B3923 /* ThreePicsCollectionViewCell.swift */; };
 		A5B627A226DC22E4002B3923 /* ThreePicsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B627A026DC22E4002B3923 /* ThreePicsCollectionViewCell.xib */; };
+		A5B7B3CF26DC2A480048E0A8 /* ManyPicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7B3CD26DC2A480048E0A8 /* ManyPicsCollectionViewCell.swift */; };
+		A5B7B3D026DC2A480048E0A8 /* ManyPicsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B7B3CE26DC2A480048E0A8 /* ManyPicsCollectionViewCell.xib */; };
+		A5B7B3D626DC37580048E0A8 /* PicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7B3D426DC37580048E0A8 /* PicCollectionViewCell.swift */; };
+		A5B7B3D726DC37580048E0A8 /* PicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B7B3D526DC37580048E0A8 /* PicCollectionViewCell.xib */; };
+		A5B7B3DE26DC3F700048E0A8 /* FullScreenPictureContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7B3DD26DC3F700048E0A8 /* FullScreenPictureContract.swift */; };
+		A5B7B3E426DC40520048E0A8 /* FullScreenPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7B3E226DC40520048E0A8 /* FullScreenPictureViewController.swift */; };
+		A5B7B3E526DC40520048E0A8 /* FullScreenPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B7B3E326DC40520048E0A8 /* FullScreenPictureViewController.xib */; };
+		A5F6F62226DC470E004F78F6 /* FullScreenPictureRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F6F62126DC470E004F78F6 /* FullScreenPictureRouter.swift */; };
+		A5F6F62726DC4A60004F78F6 /* FullScreenPicturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F6F62626DC4A60004F78F6 /* FullScreenPicturePresenter.swift */; };
+		A5F6F62F26DC4B9E004F78F6 /* FullScreenPictureInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F6F62E26DC4B9E004F78F6 /* FullScreenPictureInteractor.swift */; };
+		A5F6F63726DC5104004F78F6 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F6F63626DC5104004F78F6 /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +115,17 @@
 		A571E50C26DC147A008E7443 /* CellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
 		A5B6279F26DC22E4002B3923 /* ThreePicsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePicsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A5B627A026DC22E4002B3923 /* ThreePicsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreePicsCollectionViewCell.xib; sourceTree = "<group>"; };
+		A5B7B3CD26DC2A480048E0A8 /* ManyPicsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManyPicsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A5B7B3CE26DC2A480048E0A8 /* ManyPicsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManyPicsCollectionViewCell.xib; sourceTree = "<group>"; };
+		A5B7B3D426DC37580048E0A8 /* PicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicCollectionViewCell.swift; sourceTree = "<group>"; };
+		A5B7B3D526DC37580048E0A8 /* PicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PicCollectionViewCell.xib; sourceTree = "<group>"; };
+		A5B7B3DD26DC3F700048E0A8 /* FullScreenPictureContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPictureContract.swift; sourceTree = "<group>"; };
+		A5B7B3E226DC40520048E0A8 /* FullScreenPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPictureViewController.swift; sourceTree = "<group>"; };
+		A5B7B3E326DC40520048E0A8 /* FullScreenPictureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullScreenPictureViewController.xib; sourceTree = "<group>"; };
+		A5F6F62126DC470E004F78F6 /* FullScreenPictureRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPictureRouter.swift; sourceTree = "<group>"; };
+		A5F6F62626DC4A60004F78F6 /* FullScreenPicturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPicturePresenter.swift; sourceTree = "<group>"; };
+		A5F6F62E26DC4B9E004F78F6 /* FullScreenPictureInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPictureInteractor.swift; sourceTree = "<group>"; };
+		A5F6F63626DC5104004F78F6 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,13 +252,8 @@
 		A51C7DA526DAD1E7002C4218 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				A571E4FD26DBF9DB008E7443 /* UI */,
-				A51C7DC326DAD827002C4218 /* FeedContract.swift */,
-				A51C7DA626DAD213002C4218 /* FeedViewController.swift */,
-				A51C7DD126DAD8F5002C4218 /* FeedPresenter.swift */,
-				A51C7DD626DAD911002C4218 /* FeedInteractor.swift */,
-				A51C7DDE26DAD933002C4218 /* FeedRouter.swift */,
-				A51C7DA726DAD213002C4218 /* FeedViewController.xib */,
+				A5B7B3DB26DC3EB00048E0A8 /* Feed */,
+				A5B7B3DC26DC3EBD0048E0A8 /* FullScreenPicture */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -250,6 +267,10 @@
 				A571E50626DC0523008E7443 /* TwoPicsCollectionViewCell.xib */,
 				A5B6279F26DC22E4002B3923 /* ThreePicsCollectionViewCell.swift */,
 				A5B627A026DC22E4002B3923 /* ThreePicsCollectionViewCell.xib */,
+				A5B7B3CD26DC2A480048E0A8 /* ManyPicsCollectionViewCell.swift */,
+				A5B7B3CE26DC2A480048E0A8 /* ManyPicsCollectionViewCell.xib */,
+				A5B7B3D426DC37580048E0A8 /* PicCollectionViewCell.swift */,
+				A5B7B3D526DC37580048E0A8 /* PicCollectionViewCell.xib */,
 			);
 			path = PostCells;
 			sourceTree = "<group>";
@@ -261,6 +282,7 @@
 				A51C7D5E26DACB0E002C4218 /* DateFormatter+Extension.swift */,
 				A51C7E0526DB1D37002C4218 /* String+Extension.swift */,
 				A571E4CA26DB36DE008E7443 /* UIImageView+Extension.swift */,
+				A5F6F63626DC5104004F78F6 /* View+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,6 +303,33 @@
 				A571E4EF26DBF6AE008E7443 /* HeaderPostCollectionReusableView.xib */,
 			);
 			path = PostHeader;
+			sourceTree = "<group>";
+		};
+		A5B7B3DB26DC3EB00048E0A8 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A571E4FD26DBF9DB008E7443 /* UI */,
+				A51C7DC326DAD827002C4218 /* FeedContract.swift */,
+				A51C7DA626DAD213002C4218 /* FeedViewController.swift */,
+				A51C7DD126DAD8F5002C4218 /* FeedPresenter.swift */,
+				A51C7DD626DAD911002C4218 /* FeedInteractor.swift */,
+				A51C7DDE26DAD933002C4218 /* FeedRouter.swift */,
+				A51C7DA726DAD213002C4218 /* FeedViewController.xib */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		A5B7B3DC26DC3EBD0048E0A8 /* FullScreenPicture */ = {
+			isa = PBXGroup;
+			children = (
+				A5B7B3DD26DC3F700048E0A8 /* FullScreenPictureContract.swift */,
+				A5B7B3E226DC40520048E0A8 /* FullScreenPictureViewController.swift */,
+				A5F6F62626DC4A60004F78F6 /* FullScreenPicturePresenter.swift */,
+				A5F6F62E26DC4B9E004F78F6 /* FullScreenPictureInteractor.swift */,
+				A5F6F62126DC470E004F78F6 /* FullScreenPictureRouter.swift */,
+				A5B7B3E326DC40520048E0A8 /* FullScreenPictureViewController.xib */,
+			);
+			path = FullScreenPicture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,11 +442,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B7B3E526DC40520048E0A8 /* FullScreenPictureViewController.xib in Resources */,
 				A571E4F126DBF6AE008E7443 /* HeaderPostCollectionReusableView.xib in Resources */,
+				A5B7B3D726DC37580048E0A8 /* PicCollectionViewCell.xib in Resources */,
 				A571E50826DC0523008E7443 /* TwoPicsCollectionViewCell.xib in Resources */,
 				A51C7DA926DAD213002C4218 /* FeedViewController.xib in Resources */,
 				A571E4DC26DB45E1008E7443 /* Localizable.strings in Resources */,
 				A51C7DBC26DAD69F002C4218 /* SinglePostCollectionViewCell.xib in Resources */,
+				A5B7B3D026DC2A480048E0A8 /* ManyPicsCollectionViewCell.xib in Resources */,
 				A51C7CD526DAAF9D002C4218 /* LaunchScreen.storyboard in Resources */,
 				A5B627A226DC22E4002B3923 /* ThreePicsCollectionViewCell.xib in Resources */,
 				A51C7CD226DAAF9D002C4218 /* Assets.xcassets in Resources */,
@@ -429,16 +481,23 @@
 				A571E4F926DBF91D008E7443 /* HeaderPostModel.swift in Sources */,
 				A51C7DD226DAD8F5002C4218 /* FeedPresenter.swift in Sources */,
 				A51C7D0826DAB8A1002C4218 /* FeedService.swift in Sources */,
+				A5B7B3CF26DC2A480048E0A8 /* ManyPicsCollectionViewCell.swift in Sources */,
+				A5B7B3E426DC40520048E0A8 /* FullScreenPictureViewController.swift in Sources */,
+				A5B7B3DE26DC3F700048E0A8 /* FullScreenPictureContract.swift in Sources */,
 				A51C7DC426DAD827002C4218 /* FeedContract.swift in Sources */,
+				A5F6F62226DC470E004F78F6 /* FullScreenPictureRouter.swift in Sources */,
 				A571E4C326DB36BD008E7443 /* Date+Extension.swift in Sources */,
 				A51C7CD026DAAF9B002C4218 /* Koombea_Post.xcdatamodeld in Sources */,
 				A571E4B826DB22A0008E7443 /* PostCellModel.swift in Sources */,
 				A51C7D1A26DABACB002C4218 /* ServiceErrors.swift in Sources */,
 				A51C7DBB26DAD69F002C4218 /* SinglePostCollectionViewCell.swift in Sources */,
+				A5F6F62F26DC4B9E004F78F6 /* FullScreenPictureInteractor.swift in Sources */,
 				A51C7DA826DAD213002C4218 /* FeedViewController.swift in Sources */,
 				A571E50726DC0523008E7443 /* TwoPicsCollectionViewCell.swift in Sources */,
+				A5B7B3D626DC37580048E0A8 /* PicCollectionViewCell.swift in Sources */,
 				A51C7D1126DAB923002C4218 /* Feed.swift in Sources */,
 				A51C7D5F26DACB0E002C4218 /* DateFormatter+Extension.swift in Sources */,
+				A5F6F63726DC5104004F78F6 /* View+Extension.swift in Sources */,
 				A51C7DD726DAD911002C4218 /* FeedInteractor.swift in Sources */,
 				A51C7CC626DAAF9B002C4218 /* AppDelegate.swift in Sources */,
 				A571E4F026DBF6AE008E7443 /* HeaderPostCollectionReusableView.swift in Sources */,
@@ -447,6 +506,7 @@
 				A51C7D2526DABC6B002C4218 /* EndPoints.swift in Sources */,
 				A571E4CB26DB36DE008E7443 /* UIImageView+Extension.swift in Sources */,
 				A51C7CC826DAAF9B002C4218 /* SceneDelegate.swift in Sources */,
+				A5F6F62726DC4A60004F78F6 /* FullScreenPicturePresenter.swift in Sources */,
 				A51C7E0626DB1D37002C4218 /* String+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

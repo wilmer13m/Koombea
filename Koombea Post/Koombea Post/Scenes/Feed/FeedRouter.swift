@@ -23,4 +23,13 @@ class FeedRouter: PresenterToRouterFeedProtocol {
 
         return viewController
     }
+    
+    // MARK: - Navigation
+    func pushToFullScreenPitcure(on view: PresenterToViewFeedProtocol, with image: UIImage) {
+                   
+        let fullScreenPictureViewController = FullScreenPictureRouter.createModule(with: image)
+            
+        let viewController = view as! FeedViewController
+        viewController.present(fullScreenPictureViewController, animated: false, completion: nil)
+    }
 }

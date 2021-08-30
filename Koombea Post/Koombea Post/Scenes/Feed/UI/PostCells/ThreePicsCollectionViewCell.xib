@@ -28,16 +28,16 @@
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z98-Dq-Gq4">
                         <rect key="frame" x="10" y="33.5" width="245" height="414.5"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p93-F8-bVe">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p93-F8-bVe">
                                 <rect key="frame" x="0.0" y="0.0" width="245" height="296"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w4Z-V4-cP0">
                                 <rect key="frame" x="0.0" y="306" width="245" height="108.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uaJ-Jp-b79">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uaJ-Jp-b79">
                                         <rect key="frame" x="0.0" y="0.0" width="117.5" height="108.5"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tbI-F2-fxC">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tbI-F2-fxC">
                                         <rect key="frame" x="127.5" y="0.0" width="117.5" height="108.5"/>
                                     </imageView>
                                 </subviews>
@@ -50,7 +50,6 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" red="0.11612786379999999" green="0.31872778819999997" blue="0.13635013479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="pqL-NA-rxI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="F5B-BS-bDc"/>
                 <constraint firstItem="z98-Dq-Gq4" firstAttribute="top" secondItem="pqL-NA-rxI" secondAttribute="bottom" constant="8" symbolic="YES" id="Fgz-Kt-pUL"/>

@@ -50,6 +50,9 @@ class FeedPresenter: ViewToPresenterFeedProtocol {
         return typeCell ?? .singlePic
     }
     
+    func didSelectRow(in indexPath: IndexPath) {
+        
+    }
 }
 
 //MARK:- Extension

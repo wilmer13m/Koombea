@@ -13,6 +13,7 @@ protocol ViewToPresenterFeedProtocol: class {
     var view: PresenterToViewFeedProtocol? { get set }
     var interactor: PrensenterToInteractorFeedProtocol? { get set }
     var router: PresenterToRouterFeedProtocol? { get set }
+    var postsData: [Feed.PostData]? {get set}
 
     func viewDidLoad()
     func numberOfRows(in section: Int) -> Int
@@ -21,6 +22,7 @@ protocol ViewToPresenterFeedProtocol: class {
     func postInfo(for indexPath: IndexPath) -> Feed.PostData?
     func getPostForRow(for indexPath: IndexPath) -> Feed.PostData.Post?
     func getTypeCell(for row: IndexPath) -> CellType
+    func didSelectRow(in indexPath: IndexPath)
 }
 
 //MARK: View Output (Presenter - View)
@@ -47,4 +49,5 @@ protocol InteractorToPresenterFeedProtocol: class {
 //MARK: Router Input (Presenter - Router)
 protocol PresenterToRouterFeedProtocol {
     static func createModule() -> UIViewController
+    func pushToFullScreenPitcure(on view: PresenterToViewFeedProtocol, with image: UIImage)
 }
