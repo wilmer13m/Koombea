@@ -74,10 +74,11 @@ extension FeedViewController: PresenterToViewFeedProtocol {
     }
     
     func onFecthFeedFailure(with error: ServiceErrors) {
-        self.refreshControl.endRefreshing()
+        DispatchQueue.main.async {
+            self.refreshControl.endRefreshing()
+        }
     }
 
-    
     func showHUD() {
         activityIndicator.startAnimating()
     }
