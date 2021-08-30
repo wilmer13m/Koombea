@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import Kingfisher
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let cache = ImageCache.default
+        cache.memoryStorage.config.totalCostLimit = 1024 * 1024 * 10 //10mb
+        cache.diskStorage.config.sizeLimit = 1024 * 1024 * 100 //100mb
+
         return true
     }
 

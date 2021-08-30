@@ -21,16 +21,16 @@
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="xVk-tz-cTv">
-                    <rect key="frame" x="153.5" y="17" width="60.5" height="29"/>
+                    <rect key="frame" x="153.5" y="17" width="150.5" height="29"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oki-8F-RZ5">
-                            <rect key="frame" x="0.0" y="0.0" width="60.5" height="14.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="150.5" height="14.5"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTe-0T-Yv2">
-                            <rect key="frame" x="0.0" y="15.5" width="60.5" height="13.5"/>
+                            <rect key="frame" x="0.0" y="15.5" width="150.5" height="13.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -44,6 +44,7 @@
                 <constraint firstItem="xVk-tz-cTv" firstAttribute="leading" secondItem="AjI-li-08e" secondAttribute="trailing" constant="9" id="XYI-fJ-IJ2"/>
                 <constraint firstItem="AjI-li-08e" firstAttribute="centerX" secondItem="VXr-Tz-HHm" secondAttribute="centerX" multiplier="0.8" id="b0Z-BL-NEz"/>
                 <constraint firstItem="xVk-tz-cTv" firstAttribute="centerY" secondItem="AjI-li-08e" secondAttribute="centerY" id="kRY-as-Tbe"/>
+                <constraint firstAttribute="trailing" secondItem="xVk-tz-cTv" secondAttribute="trailing" constant="16" id="mBz-tD-JJ1"/>
             </constraints>
             <connections>
                 <outlet property="avatarImageView" destination="AjI-li-08e" id="LF1-3V-iDw"/>

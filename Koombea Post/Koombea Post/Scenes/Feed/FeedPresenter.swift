@@ -8,7 +8,7 @@
 import UIKit
 
 class FeedPresenter: ViewToPresenterFeedProtocol {
-    
+  
     weak var view: PresenterToViewFeedProtocol?
     
     var interactor: PrensenterToInteractorFeedProtocol?
@@ -50,8 +50,18 @@ class FeedPresenter: ViewToPresenterFeedProtocol {
         return typeCell ?? .singlePic
     }
     
-    func didSelectRow(in indexPath: IndexPath) {
+    func presentInFullScreen(image: UIImage) {
         
+        guard let _ = view else {return}
+        router?.presentFullScreenPitcure(on: view!, with: image)
+    }
+    
+    func showAlertError(title: String, message: String) {
+        
+        guard let _ = view else {return}
+        router?.presentAlertError(on: view!, title: title, message: message, completionBlock: {
+            self.viewDidLoad()
+        })
     }
 }
 
@@ -69,5 +79,6 @@ extension FeedPresenter: InteractorToPresenterFeedProtocol {
         
         view?.hideHUD()
         view?.onFecthFeedFailure(with: error)
+        
     }
 }

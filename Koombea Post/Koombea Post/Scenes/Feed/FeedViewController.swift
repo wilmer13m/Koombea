@@ -76,6 +76,7 @@ extension FeedViewController: PresenterToViewFeedProtocol {
     func onFecthFeedFailure(with error: ServiceErrors) {
         DispatchQueue.main.async {
             self.refreshControl.endRefreshing()
+            self.presenter?.showAlertError(title: "Error", message: error.rawValue.localized())
         }
     }
 
@@ -141,7 +142,6 @@ extension FeedViewController: UICollectionViewDataSource {
             }
             
             cell.delegate = self
-
             return cell
             
         case .moreThanThreePics:
@@ -212,6 +212,8 @@ extension FeedViewController: UICollectionViewDelegateFlowLayout {
 extension FeedViewController: ImageSelectecion {
     
     func openImage(image: UIImage?) {
-        presenter?.router?.pushToFullScreenPitcure(on: self, with: image!)
+        
+        guard let image = image else {return}
+        presenter?.presentInFullScreen(image: image)
     }
 }

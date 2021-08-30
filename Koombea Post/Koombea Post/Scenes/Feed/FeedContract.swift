@@ -22,7 +22,8 @@ protocol ViewToPresenterFeedProtocol: class {
     func postInfo(for indexPath: IndexPath) -> Feed.PostData?
     func getPostForRow(for indexPath: IndexPath) -> Feed.PostData.Post?
     func getTypeCell(for row: IndexPath) -> CellType
-    func didSelectRow(in indexPath: IndexPath)
+    func presentInFullScreen(image: UIImage)
+    func showAlertError(title: String, message: String)    
 }
 
 //MARK: View Output (Presenter - View)
@@ -49,5 +50,6 @@ protocol InteractorToPresenterFeedProtocol: class {
 //MARK: Router Input (Presenter - Router)
 protocol PresenterToRouterFeedProtocol {
     static func createModule() -> UIViewController
-    func pushToFullScreenPitcure(on view: PresenterToViewFeedProtocol, with image: UIImage)
+    func presentFullScreenPitcure(on view: PresenterToViewFeedProtocol, with image: UIImage)
+    func presentAlertError(on view: PresenterToViewFeedProtocol, title: String, message: String, completionBlock: @escaping () -> ())
 }
