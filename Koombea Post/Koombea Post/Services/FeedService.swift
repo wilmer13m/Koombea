@@ -7,7 +7,11 @@
 
 import UIKit
 
-class FeedService {
+protocol FeedServiceProtocol: class {
+    func getPosts(completed: @escaping (Result<Feed, ServiceErrors>) -> Void)
+}
+
+class FeedService: FeedServiceProtocol {
 
     static let shared = FeedService()
     private let endPoints = EndPoints()

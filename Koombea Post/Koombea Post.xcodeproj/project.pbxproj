@@ -28,6 +28,8 @@
 		A51C7DD726DAD911002C4218 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7DD626DAD911002C4218 /* FeedInteractor.swift */; };
 		A51C7DDF26DAD933002C4218 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7DDE26DAD933002C4218 /* FeedRouter.swift */; };
 		A51C7E0626DB1D37002C4218 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7E0526DB1D37002C4218 /* String+Extension.swift */; };
+		A52E057B26DD82EC00CC3D21 /* FeedPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E057A26DD82EC00CC3D21 /* FeedPresenterTest.swift */; };
+		A52E058326DD8AC200CC3D21 /* FeedInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E058226DD8AC200CC3D21 /* FeedInteractorTest.swift */; };
 		A571E4B826DB22A0008E7443 /* PostCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571E4B726DB22A0008E7443 /* PostCellModel.swift */; };
 		A571E4BE26DB368D008E7443 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A571E4BD26DB368D008E7443 /* Kingfisher */; };
 		A571E4C326DB36BD008E7443 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571E4C226DB36BD008E7443 /* Date+Extension.swift */; };
@@ -101,6 +103,8 @@
 		A51C7DD626DAD911002C4218 /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		A51C7DDE26DAD933002C4218 /* FeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
 		A51C7E0526DB1D37002C4218 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		A52E057A26DD82EC00CC3D21 /* FeedPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterTest.swift; sourceTree = "<group>"; };
+		A52E058226DD8AC200CC3D21 /* FeedInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractorTest.swift; sourceTree = "<group>"; };
 		A571E4B726DB22A0008E7443 /* PostCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellModel.swift; sourceTree = "<group>"; };
 		A571E4C226DB36BD008E7443 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		A571E4CA26DB36DE008E7443 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -182,8 +186,8 @@
 				A51C7D0F26DAB8C6002C4218 /* Models */,
 				A51C7D0626DAB87F002C4218 /* Services */,
 				A51C7D1826DABAAC002C4218 /* Utils */,
-				A51C7D2C26DABE67002C4218 /* Enviroments */,
 				A51C7DA526DAD1E7002C4218 /* Scenes */,
+				A51C7D2C26DABE67002C4218 /* Enviroments */,
 				A51C7CD126DAAF9D002C4218 /* Assets.xcassets */,
 				A51C7CD326DAAF9D002C4218 /* LaunchScreen.storyboard */,
 				A51C7CD626DAAF9D002C4218 /* Info.plist */,
@@ -196,6 +200,7 @@
 		A51C7CDE26DAAF9D002C4218 /* Koombea PostTests */ = {
 			isa = PBXGroup;
 			children = (
+				A52E057926DD82B200CC3D21 /* Feed */,
 				A51C7CDF26DAAF9D002C4218 /* Koombea_PostTests.swift */,
 				A51C7CE126DAAF9D002C4218 /* Info.plist */,
 			);
@@ -285,6 +290,15 @@
 				A5F6F63626DC5104004F78F6 /* View+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A52E057926DD82B200CC3D21 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A52E057A26DD82EC00CC3D21 /* FeedPresenterTest.swift */,
+				A52E058226DD8AC200CC3D21 /* FeedInteractorTest.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		A571E4FD26DBF9DB008E7443 /* UI */ = {
@@ -515,6 +529,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52E057B26DD82EC00CC3D21 /* FeedPresenterTest.swift in Sources */,
+				A52E058326DD8AC200CC3D21 /* FeedInteractorTest.swift in Sources */,
 				A51C7CE026DAAF9D002C4218 /* Koombea_PostTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

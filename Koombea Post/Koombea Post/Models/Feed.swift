@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct Feed: Codable {
+struct Feed: Codable, Equatable {
     
+    var identifier = UUID()
     var data: [PostData]?
+    
+    private enum CodingKeys: String, CodingKey {
+        case data
+    }
     
     struct PostData: Codable {
         
@@ -29,5 +34,9 @@ struct Feed: Codable {
             var date: String?
             var pics: [String]?
         }
+    }
+    
+    static func == (lhs: Feed, rhs: Feed) -> Bool {
+        lhs.identifier == rhs.identifier
     }
 }
