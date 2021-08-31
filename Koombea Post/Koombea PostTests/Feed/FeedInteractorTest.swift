@@ -96,22 +96,6 @@ class FeedInteractorTest: XCTestCase {
     }
 }
 
-//Helpers - Mockers
-class MockInteractorToPresenterFeedProtocol: InteractorToPresenterFeedProtocol {
-  
-    var feed: Feed?
-    var error: ServiceErrors?
-    
-    func fetchFeedSuccess(feed: Feed) {
-        self.feed = feed
-    }
-    
-    func fetchFeedFailure(error: ServiceErrors) {
-        self.error = error
-    }
-}
-
-
 struct StubFeedResult {
     
     static let errorResult: Result<Feed, ServiceErrors> = Result.failure(ServiceErrors.invalidResponse)

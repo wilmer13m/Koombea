@@ -14,7 +14,7 @@ class FeedInteractor: PrensenterToInteractorFeedProtocol {
     var feed: Feed?
 
     let service: FeedServiceProtocol
-        
+    
     init(service: FeedServiceProtocol = FeedService.shared) {
         self.service = service
     }
@@ -35,8 +35,11 @@ class FeedInteractor: PrensenterToInteractorFeedProtocol {
                 self.savePostsInDatabase(response: response)
                 
                 DispatchQueue.main.async {
-                    let x = DatabaseHandler.shared.fetch(type: PostEntity.self)
-                    print(x.count)
+                    let x = DatabaseHandler.shared.fetch(type: PostInfoEntity.self)
+                    
+                    x.forEach { (item) in
+                        print(item)
+                    }
                 }
 
             case .failure(let error):

@@ -51,6 +51,15 @@
 		A5B7B3DE26DC3F700048E0A8 /* FullScreenPictureContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7B3DD26DC3F700048E0A8 /* FullScreenPictureContract.swift */; };
 		A5B7B3E426DC40520048E0A8 /* FullScreenPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7B3E226DC40520048E0A8 /* FullScreenPictureViewController.swift */; };
 		A5B7B3E526DC40520048E0A8 /* FullScreenPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B7B3E326DC40520048E0A8 /* FullScreenPictureViewController.xib */; };
+		A5C8376826DED83A001B1F6C /* PostEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8376426DED83A001B1F6C /* PostEntity+CoreDataClass.swift */; };
+		A5C8376926DED83A001B1F6C /* PostEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8376526DED83A001B1F6C /* PostEntity+CoreDataProperties.swift */; };
+		A5C8376A26DED83A001B1F6C /* PostInfoEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8376626DED83A001B1F6C /* PostInfoEntity+CoreDataClass.swift */; };
+		A5C8376B26DED83A001B1F6C /* PostInfoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8376726DED83A001B1F6C /* PostInfoEntity+CoreDataProperties.swift */; };
+		A5C8378726DEDC13001B1F6C /* MockPresenterToViewFeedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8378626DEDC13001B1F6C /* MockPresenterToViewFeedProtocol.swift */; };
+		A5C8379526DEDC63001B1F6C /* MockPrensenterToInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8379426DEDC63001B1F6C /* MockPrensenterToInteractorProtocol.swift */; };
+		A5C8379A26DEDC94001B1F6C /* MockPresenterToRouterFeedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8379926DEDC94001B1F6C /* MockPresenterToRouterFeedProtocol.swift */; };
+		A5C8379F26DEDCF7001B1F6C /* MockFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8379E26DEDCF7001B1F6C /* MockFeed.swift */; };
+		A5C837A826DEDD46001B1F6C /* MockInteractorToPresenterFeedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C837A726DEDD46001B1F6C /* MockInteractorToPresenterFeedProtocol.swift */; };
 		A5EE3DAA26DDF33D00CE149E /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = A5EE3DA926DDF33D00CE149E /* SkeletonView */; };
 		A5F6F62226DC470E004F78F6 /* FullScreenPictureRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F6F62126DC470E004F78F6 /* FullScreenPictureRouter.swift */; };
 		A5F6F62726DC4A60004F78F6 /* FullScreenPicturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F6F62626DC4A60004F78F6 /* FullScreenPicturePresenter.swift */; };
@@ -129,6 +138,15 @@
 		A5B7B3DD26DC3F700048E0A8 /* FullScreenPictureContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPictureContract.swift; sourceTree = "<group>"; };
 		A5B7B3E226DC40520048E0A8 /* FullScreenPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPictureViewController.swift; sourceTree = "<group>"; };
 		A5B7B3E326DC40520048E0A8 /* FullScreenPictureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullScreenPictureViewController.xib; sourceTree = "<group>"; };
+		A5C8376426DED83A001B1F6C /* PostEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A5C8376526DED83A001B1F6C /* PostEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A5C8376626DED83A001B1F6C /* PostInfoEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostInfoEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A5C8376726DED83A001B1F6C /* PostInfoEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostInfoEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A5C8378626DEDC13001B1F6C /* MockPresenterToViewFeedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPresenterToViewFeedProtocol.swift; sourceTree = "<group>"; };
+		A5C8379426DEDC63001B1F6C /* MockPrensenterToInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPrensenterToInteractorProtocol.swift; sourceTree = "<group>"; };
+		A5C8379926DEDC94001B1F6C /* MockPresenterToRouterFeedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPresenterToRouterFeedProtocol.swift; sourceTree = "<group>"; };
+		A5C8379E26DEDCF7001B1F6C /* MockFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFeed.swift; sourceTree = "<group>"; };
+		A5C837A726DEDD46001B1F6C /* MockInteractorToPresenterFeedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInteractorToPresenterFeedProtocol.swift; sourceTree = "<group>"; };
 		A5F6F62126DC470E004F78F6 /* FullScreenPictureRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPictureRouter.swift; sourceTree = "<group>"; };
 		A5F6F62626DC4A60004F78F6 /* FullScreenPicturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPicturePresenter.swift; sourceTree = "<group>"; };
 		A5F6F62E26DC4B9E004F78F6 /* FullScreenPictureInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPictureInteractor.swift; sourceTree = "<group>"; };
@@ -185,19 +203,16 @@
 		A51C7CC426DAAF9B002C4218 /* Koombea Post */ = {
 			isa = PBXGroup;
 			children = (
-				A53019A426DE941900CAE001 /* DatabaseHandler */,
-				A51C7CC526DAAF9B002C4218 /* AppDelegate.swift */,
-				A51C7CC726DAAF9B002C4218 /* SceneDelegate.swift */,
+				A51C7CD626DAAF9D002C4218 /* Info.plist */,
+				A5C8378226DEDB69001B1F6C /* App */,
+				A51C7DA526DAD1E7002C4218 /* Scenes */,
+				A53019A426DE941900CAE001 /* Database */,
 				A51C7D0F26DAB8C6002C4218 /* Models */,
 				A51C7D0626DAB87F002C4218 /* Services */,
 				A51C7D1826DABAAC002C4218 /* Utils */,
-				A51C7DA526DAD1E7002C4218 /* Scenes */,
 				A51C7D2C26DABE67002C4218 /* Enviroments */,
-				A51C7CD126DAAF9D002C4218 /* Assets.xcassets */,
-				A51C7CD326DAAF9D002C4218 /* LaunchScreen.storyboard */,
-				A51C7CD626DAAF9D002C4218 /* Info.plist */,
-				A571E4DE26DB45E1008E7443 /* Localizable.strings */,
-				A51C7CCE26DAAF9B002C4218 /* Koombea_Post.xcdatamodeld */,
+				A5C8378326DEDB9D001B1F6C /* Resources */,
+				A5C8378426DEDBC0001B1F6C /* SupportingFiles */,
 			);
 			path = "Koombea Post";
 			sourceTree = "<group>";
@@ -300,18 +315,22 @@
 		A52E057926DD82B200CC3D21 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				A5C8378526DEDBFF001B1F6C /* PresenterMocks */,
+				A5C837A626DEDD33001B1F6C /* InteractorMocks */,
 				A52E057A26DD82EC00CC3D21 /* FeedPresenterTest.swift */,
 				A52E058226DD8AC200CC3D21 /* FeedInteractorTest.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
 		};
-		A53019A426DE941900CAE001 /* DatabaseHandler */ = {
+		A53019A426DE941900CAE001 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				A5C8377226DEDACB001B1F6C /* Models */,
 				A53019A526DE943400CAE001 /* DatabaseHandler.swift */,
+				A51C7CCE26DAAF9B002C4218 /* Koombea_Post.xcdatamodeld */,
 			);
-			path = DatabaseHandler;
+			path = Database;
 			sourceTree = "<group>";
 		};
 		A571E4FD26DBF9DB008E7443 /* UI */ = {
@@ -357,6 +376,62 @@
 				A5B7B3E326DC40520048E0A8 /* FullScreenPictureViewController.xib */,
 			);
 			path = FullScreenPicture;
+			sourceTree = "<group>";
+		};
+		A5C8377226DEDACB001B1F6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5C8376426DED83A001B1F6C /* PostEntity+CoreDataClass.swift */,
+				A5C8376526DED83A001B1F6C /* PostEntity+CoreDataProperties.swift */,
+				A5C8376626DED83A001B1F6C /* PostInfoEntity+CoreDataClass.swift */,
+				A5C8376726DED83A001B1F6C /* PostInfoEntity+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5C8378226DEDB69001B1F6C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A51C7CC526DAAF9B002C4218 /* AppDelegate.swift */,
+				A51C7CC726DAAF9B002C4218 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A5C8378326DEDB9D001B1F6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A51C7CD126DAAF9D002C4218 /* Assets.xcassets */,
+				A51C7CD326DAAF9D002C4218 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5C8378426DEDBC0001B1F6C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A571E4DE26DB45E1008E7443 /* Localizable.strings */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		A5C8378526DEDBFF001B1F6C /* PresenterMocks */ = {
+			isa = PBXGroup;
+			children = (
+				A5C8378626DEDC13001B1F6C /* MockPresenterToViewFeedProtocol.swift */,
+				A5C8379426DEDC63001B1F6C /* MockPrensenterToInteractorProtocol.swift */,
+				A5C8379926DEDC94001B1F6C /* MockPresenterToRouterFeedProtocol.swift */,
+				A5C8379E26DEDCF7001B1F6C /* MockFeed.swift */,
+			);
+			path = PresenterMocks;
+			sourceTree = "<group>";
+		};
+		A5C837A626DEDD33001B1F6C /* InteractorMocks */ = {
+			isa = PBXGroup;
+			children = (
+				A5C837A726DEDD46001B1F6C /* MockInteractorToPresenterFeedProtocol.swift */,
+			);
+			path = InteractorMocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,9 +587,11 @@
 				A53019A626DE943400CAE001 /* DatabaseHandler.swift in Sources */,
 				A51C7D0826DAB8A1002C4218 /* FeedService.swift in Sources */,
 				A5B7B3CF26DC2A480048E0A8 /* ManyPicsCollectionViewCell.swift in Sources */,
+				A5C8376926DED83A001B1F6C /* PostEntity+CoreDataProperties.swift in Sources */,
 				A5B7B3E426DC40520048E0A8 /* FullScreenPictureViewController.swift in Sources */,
 				A5B7B3DE26DC3F700048E0A8 /* FullScreenPictureContract.swift in Sources */,
 				A51C7DC426DAD827002C4218 /* FeedContract.swift in Sources */,
+				A5C8376826DED83A001B1F6C /* PostEntity+CoreDataClass.swift in Sources */,
 				A5F6F62226DC470E004F78F6 /* FullScreenPictureRouter.swift in Sources */,
 				A571E4C326DB36BD008E7443 /* Date+Extension.swift in Sources */,
 				A51C7CD026DAAF9B002C4218 /* Koombea_Post.xcdatamodeld in Sources */,
@@ -524,6 +601,7 @@
 				A5F6F62F26DC4B9E004F78F6 /* FullScreenPictureInteractor.swift in Sources */,
 				A51C7DA826DAD213002C4218 /* FeedViewController.swift in Sources */,
 				A571E50726DC0523008E7443 /* TwoPicsCollectionViewCell.swift in Sources */,
+				A5C8376A26DED83A001B1F6C /* PostInfoEntity+CoreDataClass.swift in Sources */,
 				A5B7B3D626DC37580048E0A8 /* PicCollectionViewCell.swift in Sources */,
 				A51C7D1126DAB923002C4218 /* Feed.swift in Sources */,
 				A51C7D5F26DACB0E002C4218 /* DateFormatter+Extension.swift in Sources */,
@@ -535,6 +613,7 @@
 				A571E50D26DC147A008E7443 /* CellType.swift in Sources */,
 				A51C7D2526DABC6B002C4218 /* EndPoints.swift in Sources */,
 				A571E4CB26DB36DE008E7443 /* UIImageView+Extension.swift in Sources */,
+				A5C8376B26DED83A001B1F6C /* PostInfoEntity+CoreDataProperties.swift in Sources */,
 				A51C7CC826DAAF9B002C4218 /* SceneDelegate.swift in Sources */,
 				A5F6F62726DC4A60004F78F6 /* FullScreenPicturePresenter.swift in Sources */,
 				A51C7E0626DB1D37002C4218 /* String+Extension.swift in Sources */,
@@ -545,8 +624,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C8379A26DEDC94001B1F6C /* MockPresenterToRouterFeedProtocol.swift in Sources */,
 				A52E057B26DD82EC00CC3D21 /* FeedPresenterTest.swift in Sources */,
 				A52E058326DD8AC200CC3D21 /* FeedInteractorTest.swift in Sources */,
+				A5C8378726DEDC13001B1F6C /* MockPresenterToViewFeedProtocol.swift in Sources */,
+				A5C837A826DEDD46001B1F6C /* MockInteractorToPresenterFeedProtocol.swift in Sources */,
+				A5C8379526DEDC63001B1F6C /* MockPrensenterToInteractorProtocol.swift in Sources */,
+				A5C8379F26DEDCF7001B1F6C /* MockFeed.swift in Sources */,
 				A51C7CE026DAAF9D002C4218 /* Koombea_PostTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
