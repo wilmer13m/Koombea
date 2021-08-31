@@ -29,7 +29,7 @@ class FeedViewController: UIViewController {
         static let twoPicsCellNibName = "TwoPicsCollectionViewCell"
         static let threePicsCellNibName = "ThreePicsCollectionViewCell"
         static let manyPicsCellNibName = "ManyPicsCollectionViewCell"
-        static let headerHeight: CGFloat = 50
+        static let headerHeight: CGFloat = 45
         static let spaceBetweenRows: CGFloat = 10
     }
     
