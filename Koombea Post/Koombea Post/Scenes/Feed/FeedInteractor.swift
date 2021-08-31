@@ -10,14 +10,15 @@ import Foundation
 class FeedInteractor: PrensenterToInteractorFeedProtocol {
       
     weak var presenter: InteractorToPresenterFeedProtocol?
-        
-    let service: FeedServiceProtocol
-    
+
     var feed: Feed?
-    
+
+    let service: FeedServiceProtocol
+        
     init(service: FeedServiceProtocol = FeedService.shared) {
         self.service = service
     }
+    
     func retrieveFeed() {
         
         service.getPosts { [weak self] (result) in
@@ -31,10 +32,24 @@ class FeedInteractor: PrensenterToInteractorFeedProtocol {
             case .success(let response):
                 self.feed = response
                 self.presenter?.fetchFeedSuccess(feed: response)
+                self.savePostsInDatabase(response: response)
+                
+                DispatchQueue.main.async {
+                    let x = DatabaseHandler.shared.fetch(type: PostEntity.self)
+                    print(x.count)
+                }
 
             case .failure(let error):
                 self.presenter?.fetchFeedFailure(error: error)
             }
+        }
+    }
+    
+    func savePostsInDatabase(response: Feed) {
+        DispatchQueue.main.async {
+            response.data?.forEach({ (post) in
+                post.storeInDatabase()
+            })
         }
     }
 }

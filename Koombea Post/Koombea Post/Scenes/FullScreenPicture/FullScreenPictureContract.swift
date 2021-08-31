@@ -21,7 +21,6 @@ protocol ViewToPresenterPictureProtocol: class {
 //MARK: View Output (Presenter - View)
 protocol PresenterToViewPictureProtocol: class {
     func onFetchPictureSuccess(image: UIImage)
-    func onFecthPictureFailure()
 }
 
 //MARK: Interactor Input (Presenter - Interactor)

@@ -30,7 +30,7 @@ class FeedRouter: PresenterToRouterFeedProtocol {
         let fullScreenPictureViewController = FullScreenPictureRouter.createModule(with: image)
             
         let viewController = view as! FeedViewController
-        viewController.present(fullScreenPictureViewController, animated: false, completion: nil)
+        viewController.present(fullScreenPictureViewController, animated: true, completion: nil)
     }
     
     func presentAlertError(on view: PresenterToViewFeedProtocol, title: String, message: String, completionBlock: @escaping () -> ()) {

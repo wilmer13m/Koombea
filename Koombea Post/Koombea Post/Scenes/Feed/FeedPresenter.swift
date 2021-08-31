@@ -73,6 +73,7 @@ extension FeedPresenter: InteractorToPresenterFeedProtocol {
         view?.hideHUD()
         postsData = feed.data
         view?.onFetchFeedSuccess()
+    
     }
     
     func fetchFeedFailure(error: ServiceErrors) {

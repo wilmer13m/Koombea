@@ -66,9 +66,5 @@ extension FullScreenPictureViewController: PresenterToViewPictureProtocol {
     
     func onFetchPictureSuccess(image: UIImage) {
         imageView.image = image
-    }
-    
-    func onFecthPictureFailure() {
-        print("alerta...")
     }    
 }

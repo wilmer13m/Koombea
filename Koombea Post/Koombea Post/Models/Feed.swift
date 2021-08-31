@@ -12,6 +12,8 @@ struct Feed: Codable, Equatable {
     var identifier = UUID()
     var data: [PostData]?
     
+    static let database = DatabaseHandler.shared
+    
     private enum CodingKeys: String, CodingKey {
         case data
     }
@@ -29,6 +31,15 @@ struct Feed: Codable, Equatable {
             case profilePic = "profile_pic"
         }
 
+        func storeInDatabase() {
+            guard let postEntity = Feed.database.add(type: PostEntity.self) else {return}
+            postEntity.name = name
+            postEntity.uid = uid
+            postEntity.email = email
+            postEntity.profile_pics = profilePic
+            
+            Feed.database.save()
+        }
         struct Post: Codable {
             var id: Int?
             var date: String?

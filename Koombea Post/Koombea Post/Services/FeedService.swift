@@ -42,6 +42,7 @@ class FeedService: FeedServiceProtocol {
             do {
                 let deconder = JSONDecoder()
                 let results = try deconder.decode(Feed.self, from: data)
+                
                 completed(.success(results))
                 
             } catch {
