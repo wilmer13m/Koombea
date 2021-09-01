@@ -16,7 +16,6 @@ extension UIImageView {
         self.contentMode = .scaleAspectFill
         let url = URL(string: url)
         self.kf.indicatorType = .activity
-//        self.kf.setImage(with: url, placeholder: UIImage(systemName: "photo.fill"))
         self.kf.setImage(with: url, placeholder: UIImage(systemName: "photo.fill"), options: nil) { (result) in
             print(result)
             switch result {
