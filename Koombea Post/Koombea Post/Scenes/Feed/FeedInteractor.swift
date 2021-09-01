@@ -38,7 +38,7 @@ class FeedInteractor: PrensenterToInteractorFeedProtocol {
                     let x = DatabaseHandler.shared.fetch(type: PostInfoEntity.self)
                     
                     x.forEach { (item) in
-                        print(item)
+//                        print(item)
                     }
                 }
 

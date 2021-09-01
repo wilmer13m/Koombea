@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 class HeaderPostCollectionReusableView: UICollectionReusableView {
 
@@ -20,13 +21,30 @@ class HeaderPostCollectionReusableView: UICollectionReusableView {
         super.awakeFromNib()
         
         avatarImageView.layer.cornerRadius = 33 / 2
+        showSkeleton()
     }
-     
+    
     var settings: HeaderPostModel? {
         didSet {
+            
+            hideSkeleton()
+
             avatarImageView.loadImageFrom(url: settings?.avatarImageUrl ?? "")
             userNameLabel.text = settings?.userName
             emailLabel.text = settings?.email
+            
         }
+    }
+    
+    func showSkeleton() {
+        avatarImageView.showGradientSkeleton()
+        userNameLabel.showGradientSkeleton()
+        emailLabel.showGradientSkeleton()
+    }
+    
+    func hideSkeleton() {
+        avatarImageView.hideSkeleton()
+        userNameLabel.hideSkeleton()
+        emailLabel.hideSkeleton()
     }
 }

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import SkeletonView
+import Kingfisher
 
 class FeedViewController: UIViewController {
 
@@ -37,8 +39,16 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        presenter?.viewDidLoad()
         settingCollectionView()
+        presenter?.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        postCollectionView.isSkeletonable = true
+        postCollectionView.showGradientSkeleton()
+        postCollectionView.showSkeleton(usingColor: .wetAsphalt, transition: .crossDissolve(0.5))
     }
     
     //MARK:- Settings
@@ -58,8 +68,15 @@ class FeedViewController: UIViewController {
     
     // MARK: - Actions
      @objc func refresh() {
-         presenter?.refresh()
+        clearCacheImages()
+        presenter?.refresh()
      }
+    
+    private func clearCacheImages() {
+        KingfisherManager.shared.cache.clearMemoryCache()
+        KingfisherManager.shared.cache.clearDiskCache()
+        KingfisherManager.shared.cache.cleanExpiredDiskCache()
+    }
 }
 
 //MARK:- Extension
@@ -67,14 +84,17 @@ class FeedViewController: UIViewController {
 extension FeedViewController: PresenterToViewFeedProtocol {
     
     func onFetchFeedSuccess() {
+        
         DispatchQueue.main.async {
             self.refreshControl.endRefreshing()
             self.postCollectionView.reloadData()
+            self.postCollectionView.hideSkeleton()
         }
     }
     
     func onFecthFeedFailure(with error: ServiceErrors) {
         DispatchQueue.main.async {
+            self.postCollectionView.hideSkeleton()
             self.refreshControl.endRefreshing()
             self.presenter?.showAlertError(title: "Error", message: error.rawValue.localized())
         }
@@ -91,7 +111,12 @@ extension FeedViewController: PresenterToViewFeedProtocol {
     }
 }
 
-extension FeedViewController: UICollectionViewDataSource {
+extension FeedViewController: SkeletonCollectionViewDataSource {
+    func collectionSkeletonView(_ skeletonView: UICollectionView, cellIdentifierForItemAt indexPath: IndexPath) -> ReusableCellIdentifier {
+                    
+        return SinglePostCollectionViewCell.reuseIdentifier
+    }
+    
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return presenter?.numberOfSection() ?? 0

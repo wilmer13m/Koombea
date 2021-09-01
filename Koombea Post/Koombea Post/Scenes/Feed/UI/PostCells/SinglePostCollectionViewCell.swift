@@ -19,18 +19,23 @@ class SinglePostCollectionViewCell: UICollectionViewCell {
     weak var delegate: ImageSelectecion?
     
     static let reuseIdentifier = "SinglePostCollectionViewCellId"
-
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         settingImageViews()
+        dateLabel.showGradientSkeleton()
+        postImageView.showSkeleton()
     }
 
     var settings: PostCellModel? {
         didSet {
+            
+            dateLabel.hideSkeleton()
+            postImageView.hideSkeleton()
             dateLabel.text = settings?.post.datePost
             postImageView.loadImageFrom(url: settings?.post.postImageUrl[0] ?? "")
+            
         }
     }
     
