@@ -12,7 +12,6 @@
 		A51C7CD026DAAF9B002C4218 /* Koombea_Post.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A51C7CCE26DAAF9B002C4218 /* Koombea_Post.xcdatamodeld */; };
 		A51C7CD226DAAF9D002C4218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51C7CD126DAAF9D002C4218 /* Assets.xcassets */; };
 		A51C7CD526DAAF9D002C4218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51C7CD326DAAF9D002C4218 /* LaunchScreen.storyboard */; };
-		A51C7CE026DAAF9D002C4218 /* Koombea_PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7CDF26DAAF9D002C4218 /* Koombea_PostTests.swift */; };
 		A51C7CEB26DAAF9D002C4218 /* Koombea_PostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7CEA26DAAF9D002C4218 /* Koombea_PostUITests.swift */; };
 		A51C7D0826DAB8A1002C4218 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7D0726DAB8A1002C4218 /* FeedService.swift */; };
 		A51C7D1126DAB923002C4218 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C7D1026DAB923002C4218 /* Feed.swift */; };
@@ -94,7 +93,6 @@
 		A51C7CD426DAAF9D002C4218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A51C7CD626DAAF9D002C4218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A51C7CDB26DAAF9D002C4218 /* Koombea PostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Koombea PostTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A51C7CDF26DAAF9D002C4218 /* Koombea_PostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koombea_PostTests.swift; sourceTree = "<group>"; };
 		A51C7CE126DAAF9D002C4218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A51C7CE626DAAF9D002C4218 /* Koombea PostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Koombea PostUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51C7CEA26DAAF9D002C4218 /* Koombea_PostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koombea_PostUITests.swift; sourceTree = "<group>"; };
@@ -223,7 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				A52E057926DD82B200CC3D21 /* Feed */,
-				A51C7CDF26DAAF9D002C4218 /* Koombea_PostTests.swift */,
 				A51C7CE126DAAF9D002C4218 /* Info.plist */,
 			);
 			path = "Koombea PostTests";
@@ -635,7 +632,6 @@
 				A5C837A826DEDD46001B1F6C /* MockInteractorToPresenterFeedProtocol.swift in Sources */,
 				A5C8379526DEDC63001B1F6C /* MockPrensenterToInteractorProtocol.swift in Sources */,
 				A5C8379F26DEDCF7001B1F6C /* MockFeed.swift in Sources */,
-				A51C7CE026DAAF9D002C4218 /* Koombea_PostTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

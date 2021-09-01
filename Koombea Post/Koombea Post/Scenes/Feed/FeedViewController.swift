@@ -74,7 +74,6 @@ class FeedViewController: UIViewController {
 }
 
 //MARK:- Extension
-
 extension FeedViewController: PresenterToViewFeedProtocol {
     
     func onFetchFeedSuccess() {

@@ -34,13 +34,14 @@ class FeedInteractor: PrensenterToInteractorFeedProtocol {
                 self.presenter?.fetchFeedSuccess(feed: response)
                 self.savePostsInDatabase(response: response)
                 
-                DispatchQueue.main.async {
-                    let x = DatabaseHandler.shared.fetch(type: PostInfoEntity.self)
+                //MARK:- Uncomment the lines below to see the posts stores it in core Data
+//                DispatchQueue.main.async {
+//                    let x = DatabaseHandler.shared.fetch(type: PostInfoEntity.self)
                     
-                    x.forEach { (item) in
+//                    x.forEach { (item) in
 //                        print(item)
-                    }
-                }
+//                    }
+//                }
 
             case .failure(let error):
                 self.presenter?.fetchFeedFailure(error: error)
