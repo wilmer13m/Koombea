@@ -60,6 +60,7 @@
 		A5C8379F26DEDCF7001B1F6C /* MockFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8379E26DEDCF7001B1F6C /* MockFeed.swift */; };
 		A5C837A826DEDD46001B1F6C /* MockInteractorToPresenterFeedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C837A726DEDD46001B1F6C /* MockInteractorToPresenterFeedProtocol.swift */; };
 		A5C8380526E01623001B1F6C /* StringProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8380426E01623001B1F6C /* StringProtocol+Extension.swift */; };
+		A5C8385E26E02C45001B1F6C /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C8385D26E02C45001B1F6C /* Asset.xcassets */; };
 		A5EE3DAA26DDF33D00CE149E /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = A5EE3DA926DDF33D00CE149E /* SkeletonView */; };
 		A5F6F62226DC470E004F78F6 /* FullScreenPictureRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F6F62126DC470E004F78F6 /* FullScreenPictureRouter.swift */; };
 		A5F6F62726DC4A60004F78F6 /* FullScreenPicturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F6F62626DC4A60004F78F6 /* FullScreenPicturePresenter.swift */; };
@@ -147,6 +148,7 @@
 		A5C8379E26DEDCF7001B1F6C /* MockFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFeed.swift; sourceTree = "<group>"; };
 		A5C837A726DEDD46001B1F6C /* MockInteractorToPresenterFeedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInteractorToPresenterFeedProtocol.swift; sourceTree = "<group>"; };
 		A5C8380426E01623001B1F6C /* StringProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+Extension.swift"; sourceTree = "<group>"; };
+		A5C8385D26E02C45001B1F6C /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
 		A5F6F62126DC470E004F78F6 /* FullScreenPictureRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPictureRouter.swift; sourceTree = "<group>"; };
 		A5F6F62626DC4A60004F78F6 /* FullScreenPicturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPicturePresenter.swift; sourceTree = "<group>"; };
 		A5F6F62E26DC4B9E004F78F6 /* FullScreenPictureInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPictureInteractor.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				A51C7D2C26DABE67002C4218 /* Enviroments */,
 				A5C8378326DEDB9D001B1F6C /* Resources */,
 				A5C8378426DEDBC0001B1F6C /* SupportingFiles */,
+				A5C8385D26E02C45001B1F6C /* Asset.xcassets */,
 			);
 			path = "Koombea Post";
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 				A571E50826DC0523008E7443 /* TwoPicsCollectionViewCell.xib in Resources */,
 				A51C7DA926DAD213002C4218 /* FeedViewController.xib in Resources */,
 				A571E4DC26DB45E1008E7443 /* Localizable.strings in Resources */,
+				A5C8385E26E02C45001B1F6C /* Asset.xcassets in Resources */,
 				A51C7DBC26DAD69F002C4218 /* SinglePostCollectionViewCell.xib in Resources */,
 				A5B7B3D026DC2A480048E0A8 /* ManyPicsCollectionViewCell.xib in Resources */,
 				A51C7CD526DAAF9D002C4218 /* LaunchScreen.storyboard in Resources */,
