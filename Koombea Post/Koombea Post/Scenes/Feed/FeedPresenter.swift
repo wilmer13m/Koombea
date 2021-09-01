@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FeedPresenter: ViewToPresenterFeedProtocol {
   
@@ -31,6 +32,8 @@ class FeedPresenter: ViewToPresenterFeedProtocol {
     }
     
     func refresh() {
+        clearCacheImages()
+        postsData = nil
         interactor?.retrieveFeed()
     }
     
@@ -39,7 +42,7 @@ class FeedPresenter: ViewToPresenterFeedProtocol {
     }
     
     func getPostForRow(for indexPath: IndexPath) -> Feed.PostData.Post? {
-        return postsData?[indexPath.section].posts[indexPath.row]
+        return postsData?[indexPath.section].posts[indexPath.row] //data para la rows
     }
     
     func getTypeCell(for indexPath: IndexPath) -> CellType {
@@ -62,6 +65,12 @@ class FeedPresenter: ViewToPresenterFeedProtocol {
         router?.presentAlertError(on: view!, title: title, message: message, completionBlock: {
             self.viewDidLoad()
         })
+    }
+    
+    private func clearCacheImages() {
+        KingfisherManager.shared.cache.clearMemoryCache()
+        KingfisherManager.shared.cache.clearDiskCache()
+        KingfisherManager.shared.cache.cleanExpiredDiskCache()
     }
 }
 

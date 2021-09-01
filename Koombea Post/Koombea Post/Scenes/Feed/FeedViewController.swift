@@ -68,15 +68,9 @@ class FeedViewController: UIViewController {
     
     // MARK: - Actions
      @objc func refresh() {
-        clearCacheImages()
         presenter?.refresh()
+        postCollectionView.showGradientSkeleton()
      }
-    
-    private func clearCacheImages() {
-        KingfisherManager.shared.cache.clearMemoryCache()
-        KingfisherManager.shared.cache.clearDiskCache()
-        KingfisherManager.shared.cache.cleanExpiredDiskCache()
-    }
 }
 
 //MARK:- Extension
@@ -116,7 +110,6 @@ extension FeedViewController: SkeletonCollectionViewDataSource {
                     
         return SinglePostCollectionViewCell.reuseIdentifier
     }
-    
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return presenter?.numberOfSection() ?? 0

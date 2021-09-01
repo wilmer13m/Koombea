@@ -11,8 +11,9 @@ extension DateFormatter {
     
     static let originalPostDateFormatter: DateFormatter = {
         let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US")
         formatter.dateFormat = "E MMMM d yyyy HH:mm:ss 'GMT'ZZZ"
-        formatter.timeZone =  TimeZone(abbreviation: "GMT-4")
+
         return formatter
     }()
 }

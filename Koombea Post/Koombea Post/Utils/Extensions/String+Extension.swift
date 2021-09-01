@@ -20,6 +20,7 @@ extension String {
         
         let ordinalFormatter = NumberFormatter()
         ordinalFormatter.numberStyle = .ordinal
+        ordinalFormatter.locale = Locale(identifier: "en_US")
         
         let day = Calendar.current.component(.day, from: safeDate)
         let dayOrdinal = ordinalFormatter.string(from: NSNumber(value: day))!
@@ -27,7 +28,6 @@ extension String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM '\(dayOrdinal)'"
         
-        return dateFormatter.string(from: safeDate)
+        return dateFormatter.string(from: safeDate).firstUppercased
     }
 }
-
